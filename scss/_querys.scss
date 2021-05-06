@@ -1,0 +1,69 @@
+/*-- media querys--*/
+
+/* Tamaño Grande - Computadoras y TV */
+
+.colG1 {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.colG2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.colG3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.colG4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Tamaño Mediano - Tablets */
+
+@media screen and (max-width: 992px) {
+
+    html {
+        font-size: 40%;
+    }
+
+    .colM1 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .colM2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+
+
+
+
+/*--Tamaño Pequeño - Celulares--*/
+
+@media screen and (max-width: 576px) {
+
+    html {
+        font-size: 35%;
+    }
+
+    .colP1 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contenedorP {
+        height: 50vh;
+        width: 100%;
+    }
+
+    .imagenRes {
+        height: 50vh;
+        width: 100%;
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+
+}

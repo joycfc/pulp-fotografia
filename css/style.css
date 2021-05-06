@@ -1,0 +1,669 @@
+@charset "UTF-8";
+/*--main--*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------
+base
+--------------------------------------------------------------------------------------------------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Raleway'; }
+
+html {
+  font-size: 9px; }
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------
+base
+--------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--menu de navegacion--*/
+.navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100; }
+  .navbar .logoP {
+    height: 6rem;
+    max-height: 40%;
+    margin: 0;
+    margin: 2em; }
+  .navbar__menu {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    top: -100vh;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: .8s;
+    overflow: hidden; }
+  .navbar__item {
+    list-style: none;
+    margin: 2em 0; }
+  .navbar__link {
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 3rem;
+    color: yellow;
+    padding: 0.5em;
+    letter-spacing: .5em;
+    position: relative;
+    display: block; }
+    .navbar__link:hover {
+      color: white; }
+    .navbar__link::after {
+      content: '';
+      height: 3px;
+      width: 0%;
+      background: white;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transition: 0.5s; }
+    .navbar__link:hover::after {
+      width: 100%; }
+  .navbar__link--active {
+    color: white;
+    pointer-events: none;
+    cursor: default; }
+  .navbar__closeIcon {
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: yellow;
+    padding: 0.5em; }
+    .navbar__closeIcon:hover {
+      color: black;
+      border: solid 1px white;
+      background-color: yellow;
+      padding: 0.5em;
+      border-radius: 5px; }
+  .navbar .openIcon {
+    font-size: 25px;
+    color: yellow;
+    cursor: pointer;
+    padding: 1.2em;
+    transition: 0.3s; }
+    .navbar .openIcon:hover {
+      color: white;
+      padding: 1.2em; }
+
+/*--menu de navegacion--*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------
+contenedores
+--------------------------------------------------------------------------------------------------------------------------------------------------*/
+.bkgA {
+  background-color: #ffd622; }
+
+.bkgB {
+  background-color: black; }
+
+.contenedor {
+  display: flex;
+  height: 100px;
+  position: absolute;
+  z-index: 10; }
+
+.contenedor__flex {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #ffd622;
+  text-align: center;
+  overflow: hidden; }
+
+.contenedorG {
+  max-height: 100%;
+  height: auto;
+  width: 100%;
+  overflow: hidden; }
+
+.contenedorP {
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1em;
+  text-align: center;
+  overflow: hidden; }
+
+.contenedorS {
+  height: auto;
+  width: 70%;
+  margin: 3em;
+  padding: 3em;
+  overflow: hidden; }
+
+/*--contenedores--*/
+.grid {
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  align-items: center; }
+
+.logoG {
+  height: 12rem;
+  max-height: 60%;
+  width: auto;
+  padding: 2em;
+  margin: 20px; }
+
+.imagenRes {
+  height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover; }
+
+.banner {
+  background-image: url(images/fondo1.jpg);
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------
+contenedores
+--------------------------------------------------------------------------------------------------------------------------------------------------*/
+.titulo {
+  font-size: 7rem;
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-align: center;
+  padding: 0.3em; }
+
+.titulo1 {
+  font-size: 6rem;
+  color: black;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-align: center;
+  padding: 0.3em; }
+
+.tituloB {
+  font-size: 6rem;
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-align: center;
+  padding: 0.3em; }
+
+.titulo2 {
+  font-size: 5rem;
+  color: #ffd622;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-align: center;
+  padding: 0.3em; }
+
+.titulo3 {
+  font-size: 3rem;
+  color: black;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-align: center;
+  padding: 0.3em; }
+
+.titulo4 {
+  font-size: 3rem;
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-align: center;
+  padding: 0.3em; }
+
+.titulo5 {
+  font-size: 5rem;
+  color: black;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-align: center;
+  padding: 0.3em; }
+
+.titulo6 {
+  font-size: 4rem;
+  color: #ffd622;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-align: center;
+  padding: 0.3em; }
+
+.parrafo {
+  font-family: 'Raleway';
+  font-size: 1.7rem;
+  padding: 1em;
+  text-align: justify;
+  margin: 0 1.5em 1.5em;
+  color: gray; }
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------
+carusel
+--------------------------------------------------------------------------------------------------------------------------------------------------*/
+header {
+  height: 100vh;
+  width: 100%;
+  background-image: url(/images/pattern.jpg); }
+
+.imgCar {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden; }
+
+.carouselP {
+  height: auto;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99); }
+
+.carouselTexto {
+  height: auto;
+  width: auto;
+  position: absolute;
+  top: 30%;
+  bottom: 30%;
+  left: 15%;
+  right: 15%;
+  padding-top: 1em;
+  padding-bottom: 0.2em;
+  color: yellow;
+  text-align: center; }
+
+.bgImagen {
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%; }
+
+.mascara {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-attachment: fixed backdrop-filter blur(1px);
+  background-color: rgba(0, 0, 0, 0.75); }
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------
+carusel
+--------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------
+botones
+--------------------------------------------------------------------------------------------------------------------------------------------------*/
+.boton {
+  border: #ffe600 solid 0.2rem;
+  min-width: 180px;
+  height: 5rem;
+  padding: 0, 3em;
+  margin: 1em;
+  display: inline-block;
+  border-radius: 100px;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s ease all;
+  color: yellow;
+  cursor: pointer; }
+  .boton:hover {
+    background: yellow;
+    color: black;
+    border: black solid 2px; }
+
+.botonB {
+  border: #ffe600 solid 0.2rem;
+  min-width: 180px;
+  height: 5rem;
+  padding: 0, 3em;
+  margin: 1em;
+  display: inline-block;
+  border-radius: 100px;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s ease all;
+  color: black;
+  cursor: pointer; }
+  .botonB:hover {
+    background: black;
+    color: yellow;
+    border: black solid 2px; }
+
+.boton__txt {
+  padding: 2em;
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600; }
+
+.boton__icono {
+  padding: 1em;
+  font-size: 2rem; }
+
+.social {
+  padding: 2em; }
+
+.social__link {
+  text-decoration: none; }
+
+.social__icons {
+  padding: 0.5em;
+  margin: 0.5em;
+  transition: 0.3s ease all; }
+
+.social__icons:hover {
+  transform: scale(1.3); }
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------
+botones
+--------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------
+banner------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--banner--*/
+.bannerDos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../images/fondo2.jpg);
+  box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99); }
+
+.bannerTres {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../images/fondo3.jpg);
+  box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99); }
+
+.bannerCuatro {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99);
+  background-image: url(../images/fondo4.jpg); }
+
+.bannerCinco {
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  background-image: url(../images/fondo5.jpg);
+  box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99); }
+
+/*--banner--*/
+/*--galeria--*/
+img {
+  max-width: 100%; }
+
+.gallery {
+  padding: 80px 0; }
+
+.gallery img {
+  background-color: yellow;
+  padding: 10px;
+  width: 100%;
+  box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99);
+  cursor: pointer; }
+
+#modalGaleria .modal-img {
+  width: 100%;
+  background-color: black; }
+
+.modal-body {
+  background-color: black; }
+
+/*-- media querys--*/
+/* Tamaño Grande - Computadoras y TV */
+.colG1 {
+  grid-template-columns: repeat(1, 1fr); }
+
+.colG2 {
+  grid-template-columns: repeat(2, 1fr); }
+
+.colG3 {
+  grid-template-columns: repeat(3, 1fr); }
+
+.colG4 {
+  grid-template-columns: repeat(4, 1fr); }
+
+/* Tamaño Mediano - Tablets */
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 40%; }
+  .colM1 {
+    grid-template-columns: repeat(1, 1fr); }
+  .colM2 {
+    grid-template-columns: repeat(2, 1fr); } }
+
+/*--Tamaño Pequeño - Celulares--*/
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 35%; }
+  .colP1 {
+    grid-template-columns: repeat(1, 1fr); }
+  .contenedorP {
+    height: 50vh;
+    width: 100%; }
+  .imagenRes {
+    height: 50vh;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover; } }
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------
+cards
+--------------------------------------------------------------------------------------------------------------------------------------------------*/
+.crd {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 2em;
+  margin-bottom: 3em;
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  background-color: black;
+  background-clip: border-box;
+  border-radius: 20px;
+  transition: 0.3s ease all; }
+
+.crd__img {
+  width: 100%;
+  border-radius: 20px;
+  max-width: 100%;
+  padding: 10px; }
+
+.crd__body {
+  text-align: center;
+  padding: 20px; }
+
+.crd:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25); }
+
+.trb {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  background-color: black;
+  background-clip: border-box;
+  border-radius: 20px;
+  transition: 0.3s ease all; }
+
+.trb__img {
+  width: 100%;
+  border-radius: 20px;
+  max-width: 100%;
+  padding: 10px; }
+
+.trb__body {
+  text-align: center;
+  padding: 20px; }
+
+.trb__titulo {
+  color: yellow;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900; }
+
+.trb__text {
+  color: white; }
+
+.trb:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25); }
+
+/*--team cards--*/
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%; }
+
+.team {
+  display: flex;
+  width: 100vw;
+  justify-content: space-around; }
+
+.team__profile {
+  margin: 20px;
+  width: 300px;
+  height: 300px;
+  padding: 25px;
+  background: black;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: .3s ease-out;
+  justify-content: center;
+  border-radius: 20px;
+  border: black solid 3px; }
+
+.team__profile:hover {
+  transform: translateY(10px);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.8); }
+
+.team__profile:hover:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: 1;
+  opacity: 0.8;
+  transition: 0.3s ease-in;
+  border-radius: 20px; }
+
+.team__profile:hover .team__txt {
+  opacity: 1;
+  transform: translateY(0); }
+
+.team__foto {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  object-fit: cover;
+  border-radius: 20px;
+  padding: 5px; }
+
+.team__txt {
+  position: relative;
+  z-index: 3;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: 0.2s ease-in;
+  text-align: center; }
+
+.team__name {
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-style: normal; }
+
+.team__role {
+  font-size: 20px;
+  color: yellow; }
+
+.team__social {
+  color: yellow;
+  padding: 10px;
+  margin: 5px;
+  border: yellow solid 1px;
+  border-radius: 10px; }
+
+.team__social:hover {
+  color: black;
+  border: black solid 1px;
+  background: yellow; }
+
+/*--team cards--*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------
+cards
+--------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------
+footer
+-----------------------------------------------------------------------------------------------------------------------------------------*/
+footer {
+  background-color: black;
+  height: 60vh;
+  width: 100%;
+  color: yellow;
+  position: absolute;
+  margin: 0; }
+
+footer .fab {
+  color: yellow; }
+
+footer .copyright {
+  margin-bottom: 20px; }
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------
+footer
+-----------------------------------------------------------------------------------------------------------------------------------------*/

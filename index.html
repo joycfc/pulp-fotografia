@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!--bootstrap -->
+    <!--titulo de pagina-->
+    <title>Pulp + Estudio de Fotografía</title>
+    <!--titulo de pagina-->
+    <!--fuentes-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&family=Raleway&display=swap"
+        rel="stylesheet">
+    <!--fuentes-->
+    <!--seo-->
+    <meta name="description"
+        content="Estudio fotografico Especializado en fotografía publicitaria, industrial, retrato, moda, editorial y foto producto. Soluciones para eCommerce. en Buenos Aires, Argentina y el resto del mundo.">
+    <meta name="keywords"
+        content="catalogos, fotobooks, bodas, moda, Fotografia, estudio, aquiler, camara, buenos aires">
+    <!--seo--
+    <!--style-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--style-->
+    <!--favicom-->
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+    <!--favicom-->
+    <!--fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <!--fontawesome -->
+    <!--animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--animaciones -->
+
+</head>
+
+<body>
+    <header>
+        
+
+        <!-- menu de navegacion -->
+
+        <nav class="navbar">
+            <a href="index.html">
+                <img src="images/logob.svg" alt="" class="logoP">
+            </a>
+
+            <!-- menu de navegacion -->
+
+            <div class="navbar__menu" id="menu">
+
+                <ul class="navar__ul">
+
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link navbar__link--active">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="html/galeria.html" class="navbar__link">Galeria</a>
+                    </li>
+
+                    <li class="navbar__item">
+                        <a href="html/nosotros.html" class="navbar__link">Nosotros</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="html/servicios.html" class="navbar__link">Servicios</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="html/contactos.html" class="navbar__link">Contactos</a>
+                    </li>
+                </ul>
+
+                <div class="social">
+                    <!--bloque-->
+
+                    <a href="https://www.instagram.com/" target="_blank" class="social__link">
+                        <img src="images/instagram.png" alt="instagram" class="social__icons"></a>
+
+                    <a href="https://www.facebook.com/" target="_blank" class="social__link"><img
+                            src="images/facebook.png" alt="facebook" class="social__icons"></a>
+
+                    <a href="https://twitter.com/" target="_blank" class="social__link"><img src="images/twitter.png"
+                            alt="twitter" class="social__icons"></a>
+
+                    <a href="https://www.linkedin.com/in/joaocfc/" target="_blank" class="social__link"><img
+                            src="images/linkedin.png" alt="linkedin" class="social__icons"></a>
+
+                </div>
+                <i class="fas fa-times navbar__closeIcon" onclick="closemenu()"></i>
+
+            </div>
+
+            <i <i class="fas fa-bars openIcon" onclick="openmenu()"></i>
+
+        </nav>
+
+        <!-- menu de navegacion -->
+
+        <!--carousel-->
+
+
+        <div id="carouselT" class=" carouselP carousel slide carousel-fade " data-bs-ride="carousel">
+
+            <div class="carousel-inner ">
+
+                <div class="carousel-item active">
+                    <div class="bgImagen">
+                        <img src="images/fondo1.jpg" class="imgCar" alt="camara">
+                    </div>
+                    <div class="carouselTexto d-none d-md-block ">
+                        <h1 class="titulo">Estudio de fotografía</h1>
+                        <a href="html/nosotros.html" class="boton">
+                            <span class="boton__txt">conocenos!</span>
+                            <span><i class="fas fa-arrow-circle-right boton__icono"></i></span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="bgImagen">
+                        <img src="images/c1.jpg" class="imgCar" alt="perro">
+                        <div class=" mascara"></div>
+                    </div>
+                    <div class="carouselTexto d-none d-md-block">
+                        <h1 class="titulo">Estudio de fotografía</h1>
+                        <a href="html/nosotros.html" class="boton">
+                            <span class="boton__txt">conocenos!</span>
+                            <span><i class="fas fa-arrow-circle-right boton__icono"></i></span>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+                    <div class="bgImagen">
+                        <img src="images/c2.jpg" class="imgCar" alt="luces">
+                        <div class=" mascara"></div>
+                    </div>
+                    <div class="carouselTexto d-none d-md-block">
+                        <h1 class="titulo">Estudio de fotografía</h1>
+                        <a href="html/nosotros.html" class="boton">
+                            <span class="boton__txt">conocenos!</span>
+                            <span><i class="fas fa-arrow-circle-right boton__icono"></i></span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="bgImagen">
+                        <img src="images/c3.jpg" class="imgCar" alt="buda">
+                        <div class=" mascara"></div>
+                    </div>
+                    <div class="carouselTexto d-none d-md-block">
+                        <h1 class="titulo">Estudio de fotografía</h1>
+                        <a href="html/nosotros.html" class="boton">
+                            <span class="boton__txt">conocenos!</span>
+                            <span><i class="fas fa-arrow-circle-right boton__icono"></i></span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="bgImagen">
+                        <img src="images/c4.jpg" class="imgCar" alt="puente">
+                        <div class=" mascara"></div>
+                    </div>
+                    <div class="carouselTexto d-none d-md-block">
+                        <h1 class="titulo">Estudio de fotografía</h1>
+                        <a href="html/nosotros.html" class="boton">
+                            <span class="boton__txt">conocenos!</span>
+                            <span><i class="fas fa-arrow-circle-right boton__icono"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselT" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselT" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!--carousel-->
+    </header>
+
+
+    <main>
+
+        <section>
+            <div class="contenedor__flex">
+                <img src="images/logow.svg" alt="/logo" class="logoG">
+                <h2 class="tituloB">Nuestro Proposito</h2>
+                <div class="contenedorS">
+                    <div>
+                        <h3 class="titulo3">Disponer de un espacio profesional dedicado a todos aquellos que quieren
+                            contar
+                            historias
+                            por
+                            medio de la fotografia.</h3>
+                        <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ex
+                            voluptatum nostrum
+                            harum
+                            perferendis odit deleniti non, placeat voluptate eaque reiciendis quibusdam expedita
+                            similique
+                            aliquam
+                            optio itaque quae sint soluta.</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="contenedorG bkgB">
+                <div class="grid colP1 colG2">
+                    <div class="colP1 contenedorP">
+                        <img src="images/m3.jpg" alt="" class="imagenRes" data-aos="fade-right">
+                    </div>
+                    <div class="contenedorP">
+                        <h2 class="titulo2">Fotografia de producto.</h2>
+                        <h3 class="titulo4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus placeat
+                            recusandae veniam quis. Qui rerum blanditiis, sunt fugiat quaerat quisquam culpa tenetur hic
+                            voluptatem delectus quas similique quibusdam est enim.</p>
+                        <a href="html/servicios.html" class="boton">
+                            <span class="boton__txt">conocenos!</span>
+                            <span><i class="fas fa-arrow-circle-right boton__icono"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="contenedorG">
+                <div class="grid colP1 colG2">
+                    <div class="contenedorP">
+                        <h2 class="titulo2">Alquiler de Espacio y equipos</h2>
+                        <h3 class="titulo3">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus placeat
+                            recusandae veniam quis. Qui rerum blanditiis, sunt fugiat quaerat quisquam culpa tenetur hic
+                            voluptatem delectus quas similique quibusdam est enim.</p>
+                        <a href="html/nosotros.html" class="botonB">
+                            <span class="boton__txt">conocenos!</span>
+                            <span><i class="fas fa-arrow-circle-right boton__icono"></i></span>
+                        </a>
+                    </div>
+                    <div class="colP1 contenedorP">
+                        <img src="images/m2.jpg" alt="" class="imagenRes" data-aos="fade-left">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="contenedorG bkgB">
+                <div class="grid colP1 colG2">
+                    <div class="colP1 contenedorP">
+                        <img src="images/m1.jpg" alt="" class="imagenRes" data-aos="fade-right">
+                    </div>
+                    <div class="contenedorP">
+                        <h2 class="titulo2">Fotografia Exterior</h2>
+                        <h3 class="titulo4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus placeat
+                            recusandae veniam quis. Qui rerum blanditiis, sunt fugiat quaerat quisquam culpa tenetur hic
+                            voluptatem delectus quas similique quibusdam est enim.</p>
+                        <a href="html/nosotros.html" class="boton">
+                            <span class="boton__txt">conocenos!</span>
+                            <span><i class="fas fa-arrow-circle-right boton__icono"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="contenedorG patternW">
+                <div class="grid colP1  colG2">
+                    <div class="contenedorP">
+                        <h2 class="titulo2">Cursos de Fotografia</h2>
+                        <h3 class="titulo3">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus placeat
+                            recusandae veniam quis. Qui rerum blanditiis, sunt fugiat quaerat quisquam culpa tenetur hic
+                            voluptatem delectus quas similique quibusdam est enim.</p>
+                        <a href="html/nosotros.html" class="botonB">
+                            <span class="boton__txt">conocenos!</span>
+                            <span><i class="fas fa-arrow-circle-right boton__icono"></i></span>
+                        </a>
+                    </div>
+                    <div class="colP1 contenedorP">
+                        <img src="images/m4.jpg" alt="" class="imagenRes" data-aos="fade-left">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div>
+
+        </div>
+
+        <section class="contenedor-fluid bkgA mb-0" data-aos="fade-up">
+
+            <!--ultimos trabajos-->
+
+            <div class="text-center">
+
+                <h3 class="titulo5">Ultimos trabajos</h3>
+
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-4 mb-4">
+                        <div class="crd">
+                            <img src="images/r1.jpg" class="crd__img" alt="buda" />
+                            <div class="card-body">
+                                <a href="html/galeria.html" class="boton">
+                                    <span class="boton__txt">Ver mas</span>
+                                    <span><i class="fas fa-arrow-circle-right boton__icono"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 mb-4">
+                        <div class="crd">
+                            <img src="images/r2.jpg" class="crd__img" alt="carrusel" />
+                            <div class="card-body">
+                                <a href="html/galeria.html" class="boton">
+                                    <span class="boton__txt">Ver mas</span>
+                                    <span><i class="fas fa-arrow-circle-right boton__icono"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 mb-4">
+                        <div class="crd">
+                            <img src="images/r3.jpg" class="crd__img" alt="perro" />
+                            <div class="card-body">
+                                <a href="html/galeria.html" class="boton">
+                                    <span class="boton__txt">Ver mas</span>
+                                    <span><i class="fas fa-arrow-circle-right boton__icono"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!--ultimos trabajos-->       
+    </section>
+</main>
+
+        <!-- Footer -->
+
+        <footer class="text-center text-white">
+
+            <div class="container p-4">
+
+                <a href="index.html">
+                    <img src="images/logob.svg" alt="/logo" class="logoG">
+                </a>
+
+                <!--Social media -->
+
+                <section class="mb-4">
+
+
+                    <div class="social">
+                        <!--bloque-->
+
+                        <a href="https://www.instagram.com/" target="_blank" class="social__link">
+                            <img src="images/instagram.png" alt="instagram" class="social__icons"></a>
+
+                        <a href="https://www.facebook.com/" target="_blank" class="social__link"><img
+                                src="images/facebook.png" alt="facebook" class="social__icons"></a>
+
+                        <a href="https://twitter.com/" target="_blank" class="social__link"><img
+                                src="images/twitter.png" alt="twitter" class="social__icons"></a>
+
+                        <a href="https://www.linkedin.com/in/joaocfc/" target="_blank" class="social__link"><img
+                                src="images/linkedin.png" alt="linkedin" class="social__icons"></a>
+
+                    </div>
+
+                </section>
+
+                <!--Social media -->
+
+
+
+                <section class="">
+                    <form action="">
+
+                        <div class="row d-flex justify-content-center">
+
+
+                            <div class="col-auto">
+                                <h4 class="pt-2">
+                                    <strong>suscribete a nuestro newsletter</strong>
+                                </h4>
+                            </div>
+
+
+
+                            <div class="col-md-5 col-12">
+
+                                <div class="form-outline form-white">
+                                    <input type="email" id="form5Example2" class="form-control" />
+                                    <label class="form-label" for="form5Example2">Email address</label>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-auto">
+
+
+                                <button type="button" class="btn btn-outline-warning btn-rounded mb-4">
+                                    Subscribe
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </form>
+                </section>
+
+
+
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center p-3">
+                © 2021 Copyright: Pulp
+            </div>
+            <!-- Copyright -->
+
+        </footer>
+
+        <!-- Footer -->
+
+
+
+    <!--scripts-->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/scripts.js"></script>
+
+    <!--scripts-->
+</body>
+
+</html>

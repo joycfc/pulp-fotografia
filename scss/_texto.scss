@@ -1,0 +1,52 @@
+// texto
+
+@mixin titulo ($size, $color) {
+    font-size: $size;
+    color: $color;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    text-align: center;
+    padding: 0.3em;
+}
+
+
+.titulo {
+    @include titulo (7rem, white);
+}
+.titulo1 {
+    @include titulo (6rem, black);
+}
+.tituloB{
+    @include titulo (6rem, white);
+}
+.titulo2 {
+    @include titulo (5rem, #ffd622 );
+}
+
+.titulo3 {
+    @include titulo (3rem, black);
+}
+
+.titulo4 {
+    @include titulo (3rem, white);
+}
+
+.titulo5 {
+    @include titulo (5rem, black);
+}
+
+.titulo6 {
+    @include titulo (4rem, #ffd622);
+}
+
+.parrafo {
+    font-family: 'Raleway';
+    font-size: 1.7rem;
+    padding: 1em;
+    text-align: justify;
+    margin:0 1.5em 1.5em;
+    color: gray;
+}
+
+
+// texto
