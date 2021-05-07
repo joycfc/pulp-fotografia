@@ -2,35 +2,36 @@
 cards
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
 .crd {
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 2em;
-    margin-bottom: 3em;
-    display: flex;
-    flex-direction: column;
-    word-wrap: break-word;
-    background-color: black;
-    background-clip: border-box;
-    border-radius: 20px;
-    transition: 0.3s ease all;
-  }
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  background-clip: border-box;
+  border-radius: 20px;
+  transition: 0.3s ease all;    
+}
+
+.crd__img {
+  width: 100%;
+  border-radius: 20px;
+  max-width: 100%;
+  padding: 1em;
   
-  .crd__img {
-    width: 100%;
-    border-radius: 20px;
-    max-width: 100%;
-    padding: 10px;
-  }
-  
-  .crd__body {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .crd:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
-  }
+}
+
+.crd__body {
+  text-align: center;
+  padding: 1em;    
+}
+
+.crd:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
   
   .trb {
     width: 100%;
