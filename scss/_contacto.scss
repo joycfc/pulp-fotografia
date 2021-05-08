@@ -1,11 +1,11 @@
 .contenedorContacto {
     height: 100vh;
-    display: grid;
+    display: flex;
     align-items: center;
 }
 
 .contact-wrap {
-    width: 80%;
+    width: 100%;
     height: auto;
     margin: auto;
     display: flex;
@@ -18,18 +18,18 @@
 
 .contact-in:nth-child(1) {
     flex: 30%;
-    background-image: url(/images/r1.jpg);
+    background-image: url(/images/f1.jpg);
     opacity: 1;
     background-size: cover;
 }
 
 .contact-in:nth-child(2) {
-    flex: 45%;
+    flex: 40%;
     background-color: black;
 }
 
 .contact-in:nth-child(3) {
-    flex: 25%;
+    flex: 30%;
     padding: 0;
 }
 
@@ -94,19 +94,6 @@
 
 .contact-in-textarea::placeholder {
 	color: yellow;
-}
-
-.contact-in-btn {
-	width: 50%;
-	height: 40px;
-	border: 1px solid #fff;
-	outline: none;
-	background: transparent;
-	color: #fff;
-	font-size: 12px;
-	font-weight: 300;
-	font-family: 'Poppins', sans-serif;
-	cursor: pointer;
 }
 
 .contact-in iframe {

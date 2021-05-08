@@ -76,7 +76,6 @@
                 </ul>
 
                 <div class="social">
-                    <!--bloque-->
 
                     <a href="https://www.instagram.com/" target="_blank" class="social__link">
                         <img src="../images/instagram.png" alt="instagram" class="social__icons"></a>
@@ -91,6 +90,7 @@
                             src="../images/linkedin.png" alt="linkedin" class="social__icons"></a>
 
                 </div>
+
                 <i class="fas fa-times navbar__closeIcon" onclick="closemenu()"></i>
 
             </div>
@@ -113,13 +113,15 @@
         <!--Banner-->
 
     </header>
-    <main>
+
+    <!-- contactos -->
+
+    <main class="">
         <section>
             <div class="contenedorContacto">
-                <!-- contactos -->
                 <div class="contact-wrap">
                     <div class="contact-in">
-                        <h2 class="tituloForma">Nuestros Contactos</h2>
+                        <h2 class="titulo6">Nuestros Contactos</h2>
                         <h3 class="subtituloForma"><i class="fas fa-phone"></i> Telefonos</h3>
                         <p class="textoForma">+54 9 11 4561 1654</p>
                         <h3 class="subtituloForma"><i class="fas fa-envelope-open-text"></i> Email</h3>
@@ -127,26 +129,33 @@
                         <h3 class="subtituloForma"><i class="fas fa-map-marked-alt"></i> Direccion</h3>
                         <p class="textoForma">Santos Dumont 2719 Buenos Aires, Argentina</p>
                     </div>
+
                     <div class="contact-in">
                         <h2 class="subtituloForma">Escribinos!</h2>
+
                         <form action="#" method="GET">
-                            <input type="text" placeholder="Nombre Completo" class="contact-in-input">
-                            <input type="text" placeholder="Email" class="contact-in-input">
-                            <input type="text" placeholder="Asunto" class="contact-in-input">
-                            <textarea placeholder="Como te ayudamos?" class="contact-in-textarea"></textarea>
-                            <input type="submit" value="Enviar" class="contact-in-btn">
+                            <input type="text" placeholder="Nombre Completo"  class="contact-in-input" maxlength="20" required>
+
+                            <input type="text" placeholder="Email" class="contact-in-input" maxlength="20" required>
+
+                            <input type="text" placeholder="Asunto" class="contact-in-input" maxlength="40" required>
+
+                            <textarea placeholder="Como te ayudamos?" class="contact-in-textarea" maxlength="20" required></textarea>
+
+                            <input type="submit" value="Enviar" class="botonC">
+
                         </form>
+
                     </div>
+                    
                     <div class="contact-in">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.10929086781!2d-58.44400408514089!3d-34.57610106354365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5ea848e404f%3A0xd18aacac79f996c8!2sSantos%20Dumont%202719%2C%20C1426%20DDA%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1620354817799!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
+
                 </div>
             </div>
         </section>
-
-
-
-
+        
         <!-- contactos -->
 
 
