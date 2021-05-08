@@ -689,7 +689,7 @@ cards
     margin-bottom: 4em; }
   .contacto__s1 {
     flex: 30%;
-    background-image: url(/images/f1.jpg);
+    background-image: url(../images/f1.jpg);
     opacity: 1;
     background-size: cover;
     padding: 4em 3em; }
