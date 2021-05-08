@@ -5,47 +5,49 @@
     color: $color;
     font-family: 'Montserrat';
     font-weight: bold;
-    text-align: left;
+    text-align: center;
     padding: 0.4em;
-}
-
-
-.titulo {
-    @include titulo (7rem, white);
-}
-.titulo1 {
-    @include titulo (6rem, black);
-}
-.tituloB{
-    @include titulo (6rem, white);
-}
-.titulo2 {
-    @include titulo (5rem, $colorPrimario );
-}
-
-.titulo3 {
-    @include titulo (3rem, black);
-}
-
-.titulo4 {
-    @include titulo (3rem, white);
-}
-
-.titulo5 {
-    @include titulo (5rem, black);
 }
 
 .titulo6 {
     @include titulo (4rem, $colorPrimario);
 }
 
+.titulo2 {
+    @include titulo (5rem, $colorPrimario );
+}
+
+.titulo5 {
+    @include titulo (5rem, $colorSecundario);
+}
+
+.titulo1 {
+    @include titulo (6rem, $colorSecundario);
+}
+
+.titulo3 {
+    @include titulo (3rem, $colorSecundario);
+}
+
+.titulo4 {
+    @include titulo (3rem, $colorTerciario);
+}
+
+.titulo {
+    @include titulo (7rem, $colorTerciario);
+}
+
+.tituloB{
+    @include titulo (6rem, $colorTerciario);
+}
+
 .parrafo {
     font-family: 'Raleway';
     font-size: 1.7rem;
-    padding: 1em;
+    padding: 0.5em;
     text-align: justify;
     margin:0 1.5em 1.5em;
-    color: gray;
+    color: $colorVariante
 }
 
 .iconos{

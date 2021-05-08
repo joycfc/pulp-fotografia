@@ -16,6 +16,65 @@ html {
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
 base
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------
+banner------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--banner--*/
+.bannerDos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../images/fondo2.jpg);
+  box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99); }
+
+.bannerTres {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../images/fondo3.jpg);
+  box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99); }
+
+.bannerCuatro {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99);
+  background-image: url(../images/fondo4.jpg); }
+
+.bannerCinco {
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  background-image: url(../images/fondo5.jpg);
+  box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99); }
+
+.pattern {
+  background-image: url(/images/pattern.jpg); }
+
+/*--banner--*/
 /*--menu de navegacion--*/
 .navbar {
   display: flex;
@@ -173,28 +232,12 @@ contenedores
 contenedores
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*------ texto y titulos -----*/
-.titulo {
-  font-size: 7rem;
-  color: white;
+.titulo6 {
+  font-size: 4rem;
+  color: #ffe600;
   font-family: 'Montserrat';
   font-weight: bold;
-  text-align: left;
-  padding: 0.4em; }
-
-.titulo1 {
-  font-size: 6rem;
-  color: black;
-  font-family: 'Montserrat';
-  font-weight: bold;
-  text-align: left;
-  padding: 0.4em; }
-
-.tituloB {
-  font-size: 6rem;
-  color: white;
-  font-family: 'Montserrat';
-  font-weight: bold;
-  text-align: left;
+  text-align: center;
   padding: 0.4em; }
 
 .titulo2 {
@@ -202,23 +245,7 @@ contenedores
   color: #ffe600;
   font-family: 'Montserrat';
   font-weight: bold;
-  text-align: left;
-  padding: 0.4em; }
-
-.titulo3 {
-  font-size: 3rem;
-  color: black;
-  font-family: 'Montserrat';
-  font-weight: bold;
-  text-align: left;
-  padding: 0.4em; }
-
-.titulo4 {
-  font-size: 3rem;
-  color: white;
-  font-family: 'Montserrat';
-  font-weight: bold;
-  text-align: left;
+  text-align: center;
   padding: 0.4em; }
 
 .titulo5 {
@@ -226,24 +253,56 @@ contenedores
   color: black;
   font-family: 'Montserrat';
   font-weight: bold;
-  text-align: left;
+  text-align: center;
   padding: 0.4em; }
 
-.titulo6 {
-  font-size: 4rem;
-  color: #ffe600;
+.titulo1 {
+  font-size: 6rem;
+  color: black;
   font-family: 'Montserrat';
   font-weight: bold;
-  text-align: left;
+  text-align: center;
+  padding: 0.4em; }
+
+.titulo3 {
+  font-size: 3rem;
+  color: black;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-align: center;
+  padding: 0.4em; }
+
+.titulo4 {
+  font-size: 3rem;
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-align: center;
+  padding: 0.4em; }
+
+.titulo {
+  font-size: 7rem;
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-align: center;
+  padding: 0.4em; }
+
+.tituloB {
+  font-size: 6rem;
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-align: center;
   padding: 0.4em; }
 
 .parrafo {
   font-family: 'Raleway';
   font-size: 1.7rem;
-  padding: 1em;
+  padding: 0.5em;
   text-align: justify;
   margin: 0 1.5em 1.5em;
-  color: gray; }
+  color: darkgray; }
 
 .iconos {
   color: #ffe600; }
@@ -395,65 +454,6 @@ botones
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
 botones
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------
-banner------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*--banner--*/
-.bannerDos {
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  background-color: black;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  width: 100%;
-  background-image: url(../images/fondo2.jpg);
-  box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99); }
-
-.bannerTres {
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  background-color: black;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  width: 100%;
-  background-image: url(../images/fondo3.jpg);
-  box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99); }
-
-.bannerCuatro {
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  background-color: black;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  width: 100%;
-  box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99);
-  background-image: url(../images/fondo4.jpg); }
-
-.bannerCinco {
-  position: relative;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 60vh;
-  background-image: url(../images/fondo5.jpg);
-  box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99); }
-
-.pattern {
-  background-image: url(/images/pattern.jpg); }
-
-/*--banner--*/
 /*-- media querys--*/
 /* Tamaño Grande - Computadoras y TV */
 .colG1 {
@@ -650,58 +650,35 @@ cards
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
 cards
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
-.contenedorContacto {
-  height: 100vh;
+.contacto {
+  height: auto;
   display: grid;
   align-items: center; }
-
-.contact-wrap {
-  width: 100%;
-  height: auto;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99); }
-
-.contact-in {
-  padding: 4em 3em; }
-
-.contact-in:nth-child(1) {
-  flex: 30%;
-  background-image: url(/images/f1.jpg);
-  opacity: 1;
-  background-size: cover; }
-
-.contact-in:nth-child(2) {
-  flex: 40%;
-  background-color: black; }
-
-.contact-in:nth-child(3) {
-  flex: 30%;
-  padding: 0; }
-
-.tituloForma {
-  font-size: 30px;
-  color: black;
-  text-transform: uppercase;
-  font-weight: 500;
-  margin-bottom: 20px; }
-
-.subtituloForma {
-  font-size: 20px;
-  font-weight: 400;
-  margin-bottom: 15px;
-  color: #ffe600; }
-
-.textoForma {
-  font-size: 14px;
-  font-weight: 300;
-  margin-bottom: 20px;
-  color: white; }
-
-.contact-in form {
-  width: 100%;
-  height: auto; }
+  .contacto__contenedor {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99);
+    margin-top: 4em;
+    margin-bottom: 4em; }
+  .contacto__s1 {
+    flex: 30%;
+    background-image: url(/images/f1.jpg);
+    opacity: 1;
+    background-size: cover;
+    padding: 4em 3em; }
+  .contacto__s2 {
+    flex: 40%;
+    background-color: black;
+    padding: 4em 3em; }
+  .contacto__s3 {
+    flex: 30%;
+    padding: 0; }
+  .contacto__forma {
+    width: 100%;
+    height: auto; }
 
 .contact-in-input {
   width: 100%;
@@ -733,7 +710,7 @@ cards
 .contact-in-textarea::placeholder {
   color: #ffe600; }
 
-.contact-in iframe {
+.contacto__s3 iframe {
   width: 100%;
   height: 100%; }
 
@@ -746,12 +723,38 @@ cards
     flex: 100%; } }
 
 @media only screen and (max-width: 360px) {
+  .contact-wrap {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0; }
   .contact-in:nth-child(1) {
     flex: 50%; }
   .contact-in:nth-child(2) {
     flex: 50%; }
   .contact-in:nth-child(3) {
-    flex: 100%; } }
+    flex: 100%;
+    margin-bottom: 1em; } }
+
+/*--galeria--*/
+img {
+  max-width: 100%; }
+
+.gallery {
+  padding: 80px 0; }
+
+.gallery img {
+  background-color: black;
+  padding: 10px;
+  width: 100%;
+  box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99);
+  cursor: pointer; }
+
+#modalGaleria .modal-img {
+  width: 100%;
+  background-color: black; }
+
+.modal-body {
+  background-color: black; }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
 footer
@@ -773,23 +776,4 @@ footer .copyright {
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
 footer
 -----------------------------------------------------------------------------------------------------------------------------------------*/
-/*--galeria--*/
-img {
-  max-width: 100%; }
-
-.gallery {
-  padding: 80px 0; }
-
-.gallery img {
-  background-color: black;
-  padding: 10px;
-  width: 100%;
-  box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99);
-  cursor: pointer; }
-
-#modalGaleria .modal-img {
-  width: 100%;
-  background-color: black; }
-
-.modal-body {
-  background-color: black; }
+/*--main--*/
