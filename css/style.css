@@ -172,69 +172,70 @@ contenedores
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
 contenedores
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------ texto y titulos -----*/
 .titulo {
   font-size: 7rem;
   color: white;
   font-family: 'Montserrat';
   font-weight: bold;
-  text-align: center;
-  padding: 0.3em; }
+  text-align: left;
+  padding: 0.4em; }
 
 .titulo1 {
   font-size: 6rem;
   color: black;
   font-family: 'Montserrat';
   font-weight: bold;
-  text-align: center;
-  padding: 0.3em; }
+  text-align: left;
+  padding: 0.4em; }
 
 .tituloB {
   font-size: 6rem;
   color: white;
   font-family: 'Montserrat';
   font-weight: bold;
-  text-align: center;
-  padding: 0.3em; }
+  text-align: left;
+  padding: 0.4em; }
 
 .titulo2 {
   font-size: 5rem;
-  color: #ffd622;
+  color: #ffe600;
   font-family: 'Montserrat';
   font-weight: bold;
-  text-align: center;
-  padding: 0.3em; }
+  text-align: left;
+  padding: 0.4em; }
 
 .titulo3 {
   font-size: 3rem;
   color: black;
   font-family: 'Montserrat';
   font-weight: bold;
-  text-align: center;
-  padding: 0.3em; }
+  text-align: left;
+  padding: 0.4em; }
 
 .titulo4 {
   font-size: 3rem;
   color: white;
   font-family: 'Montserrat';
   font-weight: bold;
-  text-align: center;
-  padding: 0.3em; }
+  text-align: left;
+  padding: 0.4em; }
 
 .titulo5 {
   font-size: 5rem;
   color: black;
   font-family: 'Montserrat';
   font-weight: bold;
-  text-align: center;
-  padding: 0.3em; }
+  text-align: left;
+  padding: 0.4em; }
 
 .titulo6 {
   font-size: 4rem;
-  color: #ffd622;
+  color: #ffe600;
   font-family: 'Montserrat';
   font-weight: bold;
-  text-align: center;
-  padding: 0.3em; }
+  text-align: left;
+  padding: 0.4em; }
 
 .parrafo {
   font-family: 'Raleway';
@@ -244,6 +245,10 @@ contenedores
   margin: 0 1.5em 1.5em;
   color: gray; }
 
+.iconos {
+  color: #ffe600; }
+
+/*------ texto y titulos -----*/
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
 carusel
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -444,6 +449,9 @@ banner--------------------------------------------------------------------------
   height: 60vh;
   background-image: url(../images/fondo5.jpg);
   box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99); }
+
+.pattern {
+  background-image: url(/images/pattern.jpg); }
 
 /*--banner--*/
 /*-- media querys--*/
@@ -648,11 +656,12 @@ cards
   align-items: center; }
 
 .contact-wrap {
-  width: 80%;
+  width: 100%;
   height: auto;
   margin: auto;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99); }
 
 .contact-in {
   padding: 4em 3em; }
@@ -682,7 +691,7 @@ cards
   font-size: 20px;
   font-weight: 400;
   margin-bottom: 15px;
-  color: yellow; }
+  color: #ffe600; }
 
 .textoForma {
   font-size: 14px;
@@ -702,10 +711,10 @@ cards
   outline: none;
   padding-left: 5px;
   background: transparent;
-  color: yellow; }
+  color: #ffe600; }
 
 .contact-in-input::placeholder {
-  color: yellow; }
+  color: #ffe600; }
 
 .contact-in-textarea {
   width: 100%;
@@ -722,7 +731,7 @@ cards
   font-family: 'Poppins', sans-serif; }
 
 .contact-in-textarea::placeholder {
-  color: yellow; }
+  color: #ffe600; }
 
 .contact-in iframe {
   width: 100%;
@@ -772,7 +781,7 @@ img {
   padding: 80px 0; }
 
 .gallery img {
-  background-color: yellow;
+  background-color: black;
   padding: 10px;
   width: 100%;
   box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99);

@@ -1,12 +1,12 @@
-// texto
+/*------ texto y titulos -----*/
 
-@mixin titulo ($size, $color) {
+@mixin titulo ($size, $color,) {
     font-size: $size;
     color: $color;
     font-family: 'Montserrat';
     font-weight: bold;
-    text-align: center;
-    padding: 0.3em;
+    text-align: left;
+    padding: 0.4em;
 }
 
 
@@ -20,7 +20,7 @@
     @include titulo (6rem, white);
 }
 .titulo2 {
-    @include titulo (5rem, #ffd622 );
+    @include titulo (5rem, $colorPrimario );
 }
 
 .titulo3 {
@@ -36,7 +36,7 @@
 }
 
 .titulo6 {
-    @include titulo (4rem, #ffd622);
+    @include titulo (4rem, $colorPrimario);
 }
 
 .parrafo {
@@ -48,5 +48,9 @@
     color: gray;
 }
 
+.iconos{
+    color: $colorPrimario;
+}
 
-// texto
+
+/*------ texto y titulos -----*/
