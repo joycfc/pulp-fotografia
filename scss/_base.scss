@@ -8,11 +8,20 @@ base
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: 'Raleway';
+
 }
 
 html {
     font-size: 9px;
 }
+
+// variables
+
+$colorPrimario:   #ffe600;
+$colorSecundario: black;
+$colorTerciario: white;
+$colorVariante: darkgray;
+$sombra:  0px 10px 32px -14px rgba(0, 0, 0, 0.99);
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
 base

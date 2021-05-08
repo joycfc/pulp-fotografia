@@ -16,7 +16,8 @@ botones
     align-items: center;
     transition: 0.3s ease all;
     color: yellow;
-    cursor: pointer;    
+    cursor: pointer;
+    background-color: black; 
 
     &:hover {
         background: yellow;
@@ -24,6 +25,8 @@ botones
         border: black solid 2px;
     }
 }
+
+
 .botonB {
     border: #ffe600 solid 0.2rem;
     min-width: 180px;
@@ -47,10 +50,29 @@ botones
     }
 }
 
+.botonC {
+    border: #ffe600 solid 0.2rem;
+    min-width: 180px;
+    height: 5rem;
+    padding: 0, 3em;
+    margin: 1em;
+    border-radius: 100px;
+    align-items: center;
+    transition: 0.3s ease all;
+    background-color: black;
+    color:  #ffe600;
+    
+    &:hover {
+        background:#ffe600;
+        color: black;
+        border:   #ffe600 solid 2px;
+    }
+}
+
 .boton__txt {
     padding: 2em;
     font-size: 1.6rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat';
     font-weight: 600;
 }
 

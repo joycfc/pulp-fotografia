@@ -16,6 +16,68 @@ html {
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
 base
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------
+banner------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--banner--*/
+.bannerDos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../images/fondo2.jpg);
+  box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99); }
+
+.bannerTres {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../images/fondo3.jpg);
+  box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99); }
+
+.bannerCuatro {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99);
+  background-image: url(../images/fondo4.jpg); }
+
+.bannerCinco {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  width: 100%;
+  background-image: url(../images/fondo5.jpg);
+  box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99); }
+
+.pattern {
+  background-image: url(/images/pattern.jpg); }
+
+/*--banner--*/
 /*--menu de navegacion--*/
 .navbar {
   display: flex;
@@ -172,53 +234,22 @@ contenedores
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
 contenedores
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
-.titulo {
-  font-size: 7rem;
-  color: white;
+/*------ texto y titulos -----*/
+.titulo6 {
+  font-size: 4rem;
+  color: #ffe600;
   font-family: 'Montserrat';
   font-weight: bold;
   text-align: center;
-  padding: 0.3em; }
-
-.titulo1 {
-  font-size: 6rem;
-  color: black;
-  font-family: 'Montserrat';
-  font-weight: bold;
-  text-align: center;
-  padding: 0.3em; }
-
-.tituloB {
-  font-size: 6rem;
-  color: white;
-  font-family: 'Montserrat';
-  font-weight: bold;
-  text-align: center;
-  padding: 0.3em; }
+  padding: 0.4em; }
 
 .titulo2 {
   font-size: 5rem;
-  color: #ffd622;
+  color: #ffe600;
   font-family: 'Montserrat';
   font-weight: bold;
   text-align: center;
-  padding: 0.3em; }
-
-.titulo3 {
-  font-size: 3rem;
-  color: black;
-  font-family: 'Montserrat';
-  font-weight: bold;
-  text-align: center;
-  padding: 0.3em; }
-
-.titulo4 {
-  font-size: 3rem;
-  color: white;
-  font-family: 'Montserrat';
-  font-weight: bold;
-  text-align: center;
-  padding: 0.3em; }
+  padding: 0.4em; }
 
 .titulo5 {
   font-size: 5rem;
@@ -226,24 +257,60 @@ contenedores
   font-family: 'Montserrat';
   font-weight: bold;
   text-align: center;
-  padding: 0.3em; }
+  padding: 0.4em; }
 
-.titulo6 {
-  font-size: 4rem;
-  color: #ffd622;
+.titulo1 {
+  font-size: 6rem;
+  color: black;
   font-family: 'Montserrat';
   font-weight: bold;
   text-align: center;
-  padding: 0.3em; }
+  padding: 0.4em; }
+
+.titulo3 {
+  font-size: 3rem;
+  color: black;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-align: center;
+  padding: 0.4em; }
+
+.titulo4 {
+  font-size: 3rem;
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-align: center;
+  padding: 0.4em; }
+
+.titulo {
+  font-size: 7rem;
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-align: center;
+  padding: 0.4em; }
+
+.tituloB {
+  font-size: 6rem;
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-align: center;
+  padding: 0.4em; }
 
 .parrafo {
   font-family: 'Raleway';
   font-size: 1.7rem;
-  padding: 1em;
+  padding: 0.5em;
   text-align: justify;
   margin: 0 1.5em 1.5em;
-  color: gray; }
+  color: darkgray; }
 
+.iconos {
+  color: #ffe600; }
+
+/*------ texto y titulos -----*/
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
 carusel
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -320,7 +387,8 @@ botones
   align-items: center;
   transition: 0.3s ease all;
   color: yellow;
-  cursor: pointer; }
+  cursor: pointer;
+  background-color: black; }
   .boton:hover {
     background: yellow;
     color: black;
@@ -346,10 +414,26 @@ botones
     color: yellow;
     border: black solid 2px; }
 
+.botonC {
+  border: #ffe600 solid 0.2rem;
+  min-width: 180px;
+  height: 5rem;
+  padding: 0, 3em;
+  margin: 1em;
+  border-radius: 100px;
+  align-items: center;
+  transition: 0.3s ease all;
+  background-color: black;
+  color: #ffe600; }
+  .botonC:hover {
+    background: #ffe600;
+    color: black;
+    border: #ffe600 solid 2px; }
+
 .boton__txt {
   padding: 2em;
   font-size: 1.6rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat';
   font-weight: 600; }
 
 .boton__icono {
@@ -373,83 +457,6 @@ botones
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
 botones
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------
-banner------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*--banner--*/
-.bannerDos {
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  background-color: black;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  width: 100%;
-  background-image: url(../images/fondo2.jpg);
-  box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99); }
-
-.bannerTres {
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  background-color: black;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  width: 100%;
-  background-image: url(../images/fondo3.jpg);
-  box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99); }
-
-.bannerCuatro {
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  background-color: black;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  width: 100%;
-  box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99);
-  background-image: url(../images/fondo4.jpg); }
-
-.bannerCinco {
-  position: relative;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 60vh;
-  background-image: url(../images/fondo5.jpg);
-  box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99); }
-
-/*--banner--*/
-/*--galeria--*/
-img {
-  max-width: 100%; }
-
-.gallery {
-  padding: 80px 0; }
-
-.gallery img {
-  background-color: yellow;
-  padding: 10px;
-  width: 100%;
-  box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99);
-  cursor: pointer; }
-
-#modalGaleria .modal-img {
-  width: 100%;
-  background-color: black; }
-
-.modal-body {
-  background-color: black; }
-
 /*-- media querys--*/
 /* Tamaño Grande - Computadoras y TV */
 .colG1 {
@@ -646,23 +653,180 @@ cards
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
 cards
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------------------------------------------------------------------
-footer
------------------------------------------------------------------------------------------------------------------------------------------*/
+.contacto {
+  height: auto;
+  display: grid;
+  align-items: center; }
+  .contacto__contenedor {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99);
+    margin-top: 4em;
+    margin-bottom: 4em; }
+  .contacto__s1 {
+    flex: 30%;
+    background-image: url(/images/f1.jpg);
+    opacity: 1;
+    background-size: cover;
+    padding: 4em 3em; }
+  .contacto__s2 {
+    flex: 40%;
+    background-color: black;
+    padding: 4em 3em; }
+  .contacto__forma {
+    width: 100%;
+    height: auto; }
+  .contacto__input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    outline: none;
+    padding-left: 5px;
+    background: transparent;
+    color: #ffe600; }
+    .contacto__input::placeholder {
+      color: #ffe600; }
+  .contacto__areatxt {
+    width: 100%;
+    height: 140px;
+    margin-bottom: 20px;
+    border: 1px solid #ffe600;
+    outline: none;
+    padding-top: 5px;
+    padding-left: 5px;
+    background: white;
+    color: black;
+    font-size: 12px;
+    font-weight: 300; }
+    .contacto__areatxt::placeholder {
+      color: #ffe600; }
+  .contacto__s3 {
+    flex: 30%;
+    padding: 0; }
+  .contacto__s3 iframe {
+    width: 100%;
+    height: 100%; }
+
+@media only screen and (max-width: 480px) {
+  .contacto__s1 {
+    flex: 50%; }
+  .contacto__s2 {
+    flex: 50%; }
+  .contacto__s3 {
+    flex: 100%; } }
+
+@media only screen and (max-width: 360px) {
+  .contacto__contenedor {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0; }
+  .contacto__s1 {
+    flex: 50%; }
+  .contacto__s2 {
+    flex: 50%; }
+  .contacto__s3 {
+    flex: 100%;
+    margin-bottom: 1em; } }
+
 footer {
-  background-color: black;
-  height: 60vh;
   width: 100%;
-  color: yellow;
-  position: absolute;
-  margin: 0; }
+  height: 40vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center; }
 
-footer .fab {
-  color: yellow; }
+.footer__icons {
+  padding: 0.5em;
+  margin: 0.5em;
+  transition: 0.3s ease all;
+  border: solid red 1px; }
 
-footer .copyright {
-  margin-bottom: 20px; }
+.logoF {
+  height: 7rem;
+  margin: 3em auto; }
+
+.social__icons2 {
+  height: auto;
+  display: flex;
+  padding: 0.5em; }
+
+.circulo {
+  background-color: black;
+  text-align: center;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 4.5rem;
+  width: 4.5rem;
+  border: solid 2px #ffe600; }
+  .circulo:hover {
+    background-color: #ffe600; }
+
+.social__btn {
+  text-decoration: none;
+  height: 4.5rem;
+  width: 4.5rem;
+  background-color: black;
+  border-radius: 50%;
+  text-align: center;
+  color: #ffe600;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 0.4em; }
+  .social__btn:hover {
+    color: black; }
+
+.newsletter {
+  color: #ffe600; }
+
+.copyright {
+  width: 90%;
+  height: auto;
+  margin: 2em auto 1em auto;
+  padding: 1em 1em;
+  text-align: center;
+  color: darkgray;
+  font-size: 1.1rem; }
+
+.linea {
+  color: #ffe600;
+  border: 0.2rem solid #ffe600;
+  width: 90%;
+  margin: 2em 0; }
+
+/*--galeria--*/
+img {
+  max-width: 100%; }
+
+.gallery {
+  padding: 80px 0; }
+
+.gallery img {
+  background-color: black;
+  padding: 10px;
+  width: 100%;
+  box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99);
+  cursor: pointer; }
+
+#modalGaleria .modal-img {
+  width: 100%;
+  background-color: black; }
+
+.modal-body {
+  background-color: black; }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
 footer
 -----------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------
+footer
+-----------------------------------------------------------------------------------------------------------------------------------------*/
+/*--main--*/
