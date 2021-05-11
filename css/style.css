@@ -303,10 +303,10 @@ contenedores
 
 .parrafo {
   font-family: 'Raleway';
-  font-size: 1.7rem;
+  font-size: 2rem;
   padding: 0.5em;
   text-align: justify;
-  margin: 0 1.5em 1.5em;
+  margin: 0 1.5em;
   color: darkgray; }
 
 .iconos {
@@ -380,7 +380,7 @@ botones
   min-width: 180px;
   height: 5rem;
   padding: 0, 3em;
-  margin: 1em;
+  margin: 0.4em;
   display: inline-block;
   border-radius: 100px;
   text-decoration: none;
@@ -401,7 +401,7 @@ botones
   min-width: 180px;
   height: 5rem;
   padding: 0, 3em;
-  margin: 1em;
+  margin: 0.3em;
   display: inline-block;
   border-radius: 100px;
   text-decoration: none;
@@ -426,7 +426,8 @@ botones
   align-items: center;
   transition: 0.3s ease all;
   background-color: black;
-  color: #ffe600; }
+  color: #ffe600;
+  font-size: 2rem; }
   .botonC:hover {
     background: #ffe600;
     color: black;
@@ -434,7 +435,7 @@ botones
 
 .boton__txt {
   padding: 2em;
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-family: 'Montserrat';
   font-weight: 600; }
 
@@ -504,7 +505,7 @@ botones
 /*--Tamaño Pequeño - Celulares--*/
 @media screen and (max-width: 576px) {
   html {
-    font-size: 35%; }
+    font-size: 40%; }
   .colP1 {
     grid-template-columns: repeat(1, 1fr); }
   .contenedorP {
@@ -710,7 +711,8 @@ cards
     background: transparent;
     color: #ffe600; }
     .contacto__input::placeholder {
-      color: #ffe600; }
+      color: #ffe600;
+      font-size: 2rem; }
   .contacto__areatxt {
     width: 100%;
     height: 140px;
@@ -721,7 +723,7 @@ cards
     padding-left: 5px;
     background: white;
     color: black;
-    font-size: 12px;
+    font-size: 2rem;
     font-weight: 300; }
     .contacto__areatxt::placeholder {
       color: black; }
