@@ -18,7 +18,7 @@ function openmenu() {
 /*--galeria--*/
 
 document.addEventListener("click", function (e) {
-	if (e.target.classList.contains("gallery-item")) {
+	if (e.target.classList.contains("gImg")) {
 		const src = e.target.getAttribute("src");
 		document.querySelector(".modal-img").src = src;
 		const myModal = new bootstrap.Modal(document.getElementById('modalGaleria'));
