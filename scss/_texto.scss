@@ -6,49 +6,60 @@
     font-family: 'Montserrat';
     font-weight: bold;
     text-align: center;
-    padding: 0.4em;
+    padding: 0.5em;
 }
 
-.titulo6 {
-    @include titulo (4rem, $colorPrimario);
+
+.tituloH1 {
+    @include titulo (7rem, $colorTerciario);
 }
 
-.titulo2 {
+.tituloH2Blanco{
+    @include titulo (6rem, $colorTerciario);
+}
+
+.subTituloA {
     @include titulo (5rem, $colorPrimario );
 }
 
-.titulo5 {
+.tituloH3Negro {
+    @include titulo (3rem, $colorSecundario);
+}
+
+.parrafoB {
+    font-family: 'Raleway';
+    font-size: 2rem;
+    padding: 0.5em;
+    text-align: justify;
+    margin:0 1.5em ;
+    color: $colorTerciario;
+}
+
+.parrafoN {
+    font-family: 'Raleway';
+    font-size: 2rem;
+    padding: 0.5em;
+    text-align: justify;
+    margin:0 1.5em ;
+    color: $colorSecundario;
+}
+
+.subTituloN  {
     @include titulo (5rem, $colorSecundario);
+}
+
+.subTituloBlanco{
+    @include titulo (3rem, $colorTerciario);
+}
+
+.subTituloBanner {
+    @include titulo (4rem, $colorPrimario);
 }
 
 .titulo1 {
     @include titulo (6rem, $colorSecundario);
 }
 
-.titulo3 {
-    @include titulo (3rem, $colorSecundario);
-}
-
-.titulo4 {
-    @include titulo (3rem, $colorTerciario);
-}
-
-.titulo {
-    @include titulo (7rem, $colorTerciario);
-}
-
-.tituloB{
-    @include titulo (6rem, $colorTerciario);
-}
-
-.parrafo {
-    font-family: 'Raleway';
-    font-size: 2rem;
-    padding: 0.5em;
-    text-align: justify;
-    margin:0 1.5em ;
-    color: $colorVariante;
-}
 
 .iconos{
     color: $colorPrimario;

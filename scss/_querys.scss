@@ -1,69 +1,94 @@
 /*-- media querys--*/
 
-/* Tamaño Grande - Computadoras y TV */
 
-.colG1 {
-    grid-template-columns: repeat(1, 1fr);
-}
-
-.colG2 {
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.colG3 {
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.colG4 {
-    grid-template-columns: repeat(4, 1fr);
-}
-
-/* Tamaño Mediano - Tablets */
+/*--Tamaño mediano - tablets--*/
 
 @media screen and (max-width: 992px) {
 
+
     html {
-        font-size: 40%;
+        font-size: 42%;
     }
 
-    .colM1 {
-        grid-template-columns: repeat(1, 1fr);
+    .Fila100reverse {
+
+        flex-direction: row-reverse;
+        overflow: hidden;
+
     }
 
-    .colM2 {
-        grid-template-columns: repeat(2, 1fr);
+    .imgCont {
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    .col50 {
+        display: flex;
+        flex: 100%;
+        text-align: center;
+
+    }
+
+    .box {
+        flex-direction: column;
+        display: flex;
+        height: 50vh;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
     }
 
 }
 
+/*--Tamaño Pequeño mediano - Celulares tablets pequeñas--*/
+
+@media screen and (max-width: 724px) {
 
 
+    .bannerUno {
+        display: flex;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        width: 100%;
+        background-image: url(../images/C3.jpg);
+        justify-content: center;
+        align-items: center;
+    }
 
-
+}
 
 /*--Tamaño Pequeño - Celulares--*/
 
 @media screen and (max-width: 576px) {
 
     html {
-        font-size: 40%;
+        font-size: 30%;
     }
 
-    .colP1 {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .contenedorP {
-        height: 50vh;
-        width: 100%;
-    }
-
-    .imagenRes {
-        height: 50vh;
+    .imgCont {
+        height: 100%;
         width: 100%;
         max-width: 100%;
         object-fit: cover;
     }
 
+    .col50 {
+        display: flex;
+        flex: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .box {
+        height: 50vh;
+        width: 100vw;
+    }
 
 }

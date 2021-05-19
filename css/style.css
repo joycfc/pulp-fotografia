@@ -16,9 +16,25 @@ html {
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
 base
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
+.bkgA {
+  background-color: #ffd622; }
+
+.bkgB {
+  background-color: black; }
+
+.patternBlanco {
+  background-image: url(/images/pattern.jpg); }
+
+.patternNegro {
+  background-image: url(/images/patternn.jpg); }
+
 /*------------------------------------------------------------------------------------------------------------------------------------------------
-banner------------------------------------------------------------------------------------------------------------------------------------------------*/
+banner
+------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*--banner--*/
+.bannerUno {
+  display: none; }
+
 .bannerDos {
   position: absolute;
   top: 0;
@@ -30,8 +46,8 @@ banner--------------------------------------------------------------------------
   background-position: center;
   height: 100vh;
   width: 100%;
-  background-image: url(../images/fondo2.jpg);
-  box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99); }
+  box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99);
+  background-image: url(../images/fondo2.jpg); }
 
 .bannerTres {
   position: absolute;
@@ -44,8 +60,8 @@ banner--------------------------------------------------------------------------
   background-position: center;
   height: 100vh;
   width: 100%;
-  background-image: url(../images/fondo3.jpg);
-  box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99); }
+  box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99);
+  background-image: url(../images/fondo3.jpg); }
 
 .bannerCuatro {
   position: absolute;
@@ -66,16 +82,14 @@ banner--------------------------------------------------------------------------
   top: 0;
   left: 0;
   overflow: hidden;
+  background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
   width: 100%;
-  background-image: url(../images/fondo5.jpg);
-  box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99); }
-
-.pattern {
-  background-image: url(/images/pattern.jpg); }
+  box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99);
+  background-image: url(../images/fondo5.jpg); }
 
 /*--banner--*/
 /*--menu de navegacion--*/
@@ -89,7 +103,7 @@ banner--------------------------------------------------------------------------
   justify-content: space-between;
   z-index: 100; }
   .navbar .logoP {
-    height: 6rem;
+    height: 13rem;
     max-height: 40%;
     margin: 0;
     margin: 2em; }
@@ -161,51 +175,59 @@ banner--------------------------------------------------------------------------
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
 contenedores
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
-.bkgA {
-  background-color: #ffd622; }
-
-.bkgB {
-  background-color: black; }
-
-.contenedor {
+/*--contenedores--*/
+.col100 {
+  height: auto;
   display: flex;
-  height: 100px;
-  position: absolute;
-  z-index: 10; }
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  background-color: #ffe600; }
 
-.contenedor__flex {
+.Fila100 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+  flex-direction: row;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-content: center; }
+
+.Fila100reverse {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+  flex-direction: row-reverse;
+  overflow: hidden; }
+
+.col50 {
+  display: flex;
+  flex: 50%;
+  text-align: center;
+  justify-content: center; }
+
+.imgCont {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  object-position: center;
+  margin: 0;
+  padding: 0;
+  object-fit: cover; }
+
+.box {
   display: flex;
   flex-direction: column;
-  height: auto;
+  height: 100vh;
   width: 100%;
+  justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
-  background-color: #ffd622;
-  text-align: center;
-  overflow: hidden; }
+  text-align: center; }
 
-.contenedorG {
-  max-height: 100%;
-  height: auto;
-  width: 100%;
-  overflow: hidden; }
-
-.contenedorP {
-  height: auto;
-  width: 100%;
-  max-width: 100%;
-  margin-bottom: 1em;
-  text-align: center;
-  overflow: hidden; }
-
-.contenedorS {
-  height: auto;
-  width: 70%;
-  margin: 3em;
-  padding: 3em;
-  overflow: hidden; }
-
-/*--contenedores--*/
 .grid {
   display: grid;
   height: 100vh;
@@ -213,7 +235,7 @@ contenedores
   align-items: center; }
 
 .logoG {
-  height: 12rem;
+  height: 20rem;
   max-height: 60%;
   width: auto;
   padding: 2em;
@@ -225,41 +247,81 @@ contenedores
   max-width: 100%;
   object-fit: cover; }
 
-.banner {
-  background-image: url(images/fondo1.jpg);
-  height: 100vh;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
 contenedores
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*------ texto y titulos -----*/
-.titulo6 {
-  font-size: 4rem;
-  color: #ffe600;
+.tituloH1 {
+  font-size: 7rem;
+  color: white;
   font-family: 'Montserrat';
   font-weight: bold;
   text-align: center;
-  padding: 0.4em; }
+  padding: 0.5em; }
 
-.titulo2 {
+.tituloH2Blanco {
+  font-size: 6rem;
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5em; }
+
+.subTituloA {
   font-size: 5rem;
   color: #ffe600;
   font-family: 'Montserrat';
   font-weight: bold;
   text-align: center;
-  padding: 0.4em; }
+  padding: 0.5em; }
 
-.titulo5 {
+.tituloH3Negro {
+  font-size: 3rem;
+  color: black;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5em; }
+
+.parrafoB {
+  font-family: 'Raleway';
+  font-size: 2rem;
+  padding: 0.5em;
+  text-align: justify;
+  margin: 0 1.5em;
+  color: white; }
+
+.parrafoN {
+  font-family: 'Raleway';
+  font-size: 2rem;
+  padding: 0.5em;
+  text-align: justify;
+  margin: 0 1.5em;
+  color: black; }
+
+.subTituloN {
   font-size: 5rem;
   color: black;
   font-family: 'Montserrat';
   font-weight: bold;
   text-align: center;
-  padding: 0.4em; }
+  padding: 0.5em; }
+
+.subTituloBlanco {
+  font-size: 3rem;
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5em; }
+
+.subTituloBanner {
+  font-size: 4rem;
+  color: #ffe600;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5em; }
 
 .titulo1 {
   font-size: 6rem;
@@ -267,47 +329,7 @@ contenedores
   font-family: 'Montserrat';
   font-weight: bold;
   text-align: center;
-  padding: 0.4em; }
-
-.titulo3 {
-  font-size: 3rem;
-  color: black;
-  font-family: 'Montserrat';
-  font-weight: bold;
-  text-align: center;
-  padding: 0.4em; }
-
-.titulo4 {
-  font-size: 3rem;
-  color: white;
-  font-family: 'Montserrat';
-  font-weight: bold;
-  text-align: center;
-  padding: 0.4em; }
-
-.titulo {
-  font-size: 7rem;
-  color: white;
-  font-family: 'Montserrat';
-  font-weight: bold;
-  text-align: center;
-  padding: 0.4em; }
-
-.tituloB {
-  font-size: 6rem;
-  color: white;
-  font-family: 'Montserrat';
-  font-weight: bold;
-  text-align: center;
-  padding: 0.4em; }
-
-.parrafo {
-  font-family: 'Raleway';
-  font-size: 2rem;
-  padding: 0.5em;
-  text-align: justify;
-  margin: 0 1.5em;
-  color: darkgray; }
+  padding: 0.5em; }
 
 .iconos {
   color: #ffe600; }
@@ -365,9 +387,13 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
   background-attachment: fixed backdrop-filter blur(1px);
   background-color: rgba(0, 0, 0, 0.75); }
+
+/*--Tamaño Pequeño - Celulares--*/
+@media screen and (max-width: 724px) {
+  #carouselT {
+    display: none; } }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
 carusel
@@ -375,73 +401,90 @@ carusel
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
 botones
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
-.boton {
-  border: #ffe600 solid 0.2rem;
-  min-width: 180px;
-  height: 5rem;
-  padding: 0, 3em;
-  margin: 0.4em;
-  display: inline-block;
-  border-radius: 100px;
-  text-decoration: none;
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: 0.3s ease all;
-  color: yellow;
-  cursor: pointer;
-  background-color: black; }
-  .boton:hover {
-    background: yellow;
-    color: black;
-    border: black solid 2px; }
-
-.botonB {
-  border: #ffe600 solid 0.2rem;
-  min-width: 180px;
-  height: 5rem;
-  padding: 0, 3em;
-  margin: 0.3em;
-  display: inline-block;
-  border-radius: 100px;
-  text-decoration: none;
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: 0.3s ease all;
-  color: black;
-  cursor: pointer; }
-  .botonB:hover {
-    background: black;
-    color: yellow;
-    border: black solid 2px; }
-
-.botonC {
-  border: #ffe600 solid 0.2rem;
-  min-width: 180px;
-  height: 5rem;
-  padding: 0, 3em;
-  margin: 1em;
-  border-radius: 100px;
-  align-items: center;
-  transition: 0.3s ease all;
-  background-color: black;
+.btn__A {
   color: #ffe600;
-  font-size: 2rem; }
-  .botonC:hover {
-    background: #ffe600;
-    color: black;
-    border: #ffe600 solid 2px; }
-
-.boton__txt {
-  padding: 2em;
-  font-size: 2rem;
+  border: #ffe600 solid 0.2rem;
+  min-width: 180px;
+  height: 5rem;
+  padding: 0, 3em;
+  margin: 3em;
+  display: inline-block;
+  border-radius: 100px;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: 0.3s ease all;
+  cursor: pointer;
+  font-size: 2em;
   font-family: 'Montserrat';
   font-weight: 600; }
+  .btn__A__txt {
+    padding-left: 1em; }
+  .btn__A__icono {
+    padding: 1em;
+    font-size: 2rem; }
+  .btn__A:hover {
+    background: #ffe600;
+    color: black;
+    border: black solid 2px; }
 
-.boton__icono {
-  padding: 1em;
-  font-size: 2rem; }
+.btn__A--N {
+  color: black;
+  border: black solid 0.2rem;
+  min-width: 180px;
+  height: 5rem;
+  padding: 0, 3em;
+  margin: 3em;
+  display: inline-block;
+  border-radius: 100px;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: 0.3s ease all;
+  cursor: pointer;
+  font-size: 2em;
+  font-family: 'Montserrat';
+  font-weight: 600; }
+  .btn__A--N__txt {
+    padding-left: 1em; }
+  .btn__A--N__icono {
+    padding: 1em;
+    font-size: 2rem; }
+  .btn__A--N:hover {
+    background: black;
+    color: #ffe600;
+    border: #ffe600 solid 2px; }
+
+.btn__A--C {
+  color: #ffe600;
+  border: #ffe600 solid 0.2rem;
+  min-width: 180px;
+  height: 5rem;
+  padding: 0, 3em;
+  margin: 3em;
+  display: inline-block;
+  border-radius: 100px;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: 0.3s ease all;
+  cursor: pointer;
+  font-size: 2em;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  background-color: black; }
+  .btn__A--C__txt {
+    padding-left: 1em; }
+  .btn__A--C__icono {
+    padding: 1em;
+    font-size: 2rem; }
+  .btn__A--C:hover {
+    background: #ffe600;
+    color: black;
+    border: black solid 2px; }
 
 /*---redes sociales--*/
 .social {
@@ -480,42 +523,63 @@ botones
 botones
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*-- media querys--*/
-/* Tamaño Grande - Computadoras y TV */
-.colG1 {
-  grid-template-columns: repeat(1, 1fr); }
-
-.colG2 {
-  grid-template-columns: repeat(2, 1fr); }
-
-.colG3 {
-  grid-template-columns: repeat(3, 1fr); }
-
-.colG4 {
-  grid-template-columns: repeat(4, 1fr); }
-
-/* Tamaño Mediano - Tablets */
+/*--Tamaño mediano - tablets--*/
 @media screen and (max-width: 992px) {
   html {
-    font-size: 40%; }
-  .colM1 {
-    grid-template-columns: repeat(1, 1fr); }
-  .colM2 {
-    grid-template-columns: repeat(2, 1fr); } }
+    font-size: 42%; }
+  .Fila100reverse {
+    flex-direction: row-reverse;
+    overflow: hidden; }
+  .imgCont {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover; }
+  .col50 {
+    display: flex;
+    flex: 100%;
+    text-align: center; }
+  .box {
+    flex-direction: column;
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center; } }
+
+/*--Tamaño Pequeño mediano - Celulares tablets pequeñas--*/
+@media screen and (max-width: 724px) {
+  .bannerUno {
+    display: flex;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/C3.jpg);
+    justify-content: center;
+    align-items: center; } }
 
 /*--Tamaño Pequeño - Celulares--*/
 @media screen and (max-width: 576px) {
   html {
-    font-size: 40%; }
-  .colP1 {
-    grid-template-columns: repeat(1, 1fr); }
-  .contenedorP {
-    height: 50vh;
-    width: 100%; }
-  .imagenRes {
-    height: 50vh;
+    font-size: 30%; }
+  .imgCont {
+    height: 100%;
     width: 100%;
     max-width: 100%;
-    object-fit: cover; } }
+    object-fit: cover; }
+  .col50 {
+    display: flex;
+    flex: 100%;
+    text-align: center;
+    justify-content: center; }
+  .box {
+    height: 50vh;
+    width: 100vw; } }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
 cards
@@ -756,25 +820,55 @@ cards
     margin-bottom: 1em; } }
 
 /*--galeria--*/
-img {
-  max-width: 100%; }
+.fila {
+  display: flex;
+  padding: 0.5em;
+  flex-wrap: wrap; }
 
-.gallery {
-  padding: 80px 0; }
+.columna {
+  flex: 30%;
+  padding: 0.5em; }
 
-.gallery img {
-  background-color: black;
-  padding: 10px;
+.gImg {
   width: 100%;
-  box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99);
-  cursor: pointer; }
+  margin-top: 0.5em;
+  flex: 25%;
+  transition: 0.3s ease; }
+
+.gImg:hover {
+  transform: scale(0.9); }
+
+.copy {
+  font-size: 1rem;
+  color: yellow; }
 
 #modalGaleria .modal-img {
-  width: 100%;
+  width: 80%;
   background-color: black; }
 
 .modal-body {
-  background-color: black; }
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  align-items: center; }
+
+@media screen and (max-width: 992px) {
+  .columna {
+    flex: 50%;
+    padding: 0.5em; }
+    .columna .gImg {
+      height: auto;
+      width: 100%;
+      margin-top: 0.5em;
+      flex: 25%; } }
+
+/*--Tamaño Pequeño - Celulares--*/
+@media screen and (max-width: 576px) {
+  .columna {
+    flex: 100%;
+    padding: 0.5em; } }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
 footer
@@ -805,43 +899,9 @@ footer {
   padding: 1em 1em;
   text-align: center;
   color: darkgray;
-  font-size: 1.1rem; }
+  font-size: 1.9rem; }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
 footer
 -----------------------------------------------------------------------------------------------------------------------------------------*/
-.fila {
-  display: flex;
-  padding: 0.5em;
-  flex-wrap: wrap; }
-
-.columna {
-  flex: 30%;
-  padding: 0.5em; }
-
-.gImg {
-  height: auto;
-  width: 100%;
-  margin-top: 0.5em;
-  flex: 25%; }
-
-body {
-  background-color: yellow; }
-
-@media screen and (max-width: 992px) {
-  .columna {
-    flex: 50%;
-    padding: 0.5em; }
-    .columna .gImg {
-      height: auto;
-      width: 100%;
-      margin-top: 0.5em;
-      flex: 25%; } }
-
-/*--Tamaño Pequeño - Celulares--*/
-@media screen and (max-width: 576px) {
-  .columna {
-    flex: 100%;
-    padding: 0.5em; } }
-
 /*--main--*/

@@ -23,7 +23,26 @@ $colorTerciario: white;
 $colorVariante: darkgray;
 $sombra:  0px 10px 32px -14px rgba(0, 0, 0, 0.99);
 
+
+
+
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
 base
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.bkgA{
+    background-color: #ffd622;
+}
+.bkgB{
+    background-color: black;
+}
+
+.patternBlanco{
+    background-image: url(/images/pattern.jpg)
+}
+
+.patternNegro{
+    background-image: url(/images/patternn.jpg)
+}
 
