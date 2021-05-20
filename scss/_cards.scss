@@ -1,38 +1,6 @@
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
 cards
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
-.crd {
-  display: flex;
-  height: auto;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5em;
-  margin-bottom: 5em;
-  flex-direction: column;
-  background-color: $colorSecundario;
-  border-radius: 20px;
-  transition: 0.3s ease all;
-
-  &__img {
-    width: 100%;
-    border-radius: 20px;
-    max-width: 100%;
-    padding: 1em;
-
-  }
-
-  &__body {
-    text-align: center;
-    padding: 1em;
-  }
-
-  &:hover {
-    transform: scale(1.05);
-  }
-
-}
-
 
 .trb {
   width: 100%;
@@ -185,18 +153,27 @@ cards
 
 
 .tarjeta {
-  height: auto;
-  width: 30%;
-  background-color: $colorSecundario;
   display: flex;
+  height: auto;
+  width: 25%;
+  background-color: $colorSecundario;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2em;
-  border-radius: 50px;
+  margin: 3em;
+  border-radius: 10%;
+  transition: 0.3s;
   
+  &:hover {
+    transform: scale(1.05);
+  }
 }
-
+.imagen{
+  width: 100%;
+  border-radius: 10%;
+  max-width: 100%;
+  padding: 1em;
+}
 .prueba{
   height: auto;
   width: 100%;

@@ -1,0 +1,21 @@
+/*------ texto y titulos -----*/
+
+@mixin titulo ($size, $color,) {
+    font-size: $size;
+    color: $color;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5em;
+}
+
+@mixin parrafo ($colorTxt) {
+    font-family: 'Raleway';
+    font-size: 2rem;
+    padding: 0.5em;
+    text-align: justify;
+    margin: 2em 3em; 
+    color: $colorTxt;
+}
+
+/*------ texto y titulos -----*/

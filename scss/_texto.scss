@@ -1,54 +1,52 @@
-/*------ texto y titulos -----*/
-
-@mixin titulo ($size, $color,) {
-    font-size: $size;
-    color: $color;
-    font-family: 'Montserrat';
-    font-weight: bold;
-    text-align: center;
-    padding: 0.5em;
-}
-
-@mixin parrafo ($colorTxt) {
-    font-family: 'Raleway';
-    font-size: 2rem;
-    padding: 0.5em;
-    text-align: justify;
-    margin: 0 3em; 
-    color: $colorTxt;
-}
-
+/*------TITULOS------*/
 
 .tituloH1 {
     @include titulo (7rem, $colorTerciario);
 }
 
-.tituloH2Blanco{
+.tituloH2Blanco {
     @include titulo (6rem, $colorTerciario);
 }
 
+
+/*------TITULOS------*/
+
+/*------SUBTITULOS------*/
 .subTituloA {
-    @include titulo (5rem, $colorPrimario );
+    @include titulo (5rem, $colorPrimario);
 }
 
-.tituloH3Negro {
-    @include titulo (3rem, $colorSecundario);
+.subTituloB {
+    @include titulo (4rem, $colorSecundario);
 }
+
+.subTituloC {
+    @include titulo (3rem, $colorTerciario);
+
+}
+.subtituloD {
+    @include titulo (3rem, $colorTerciario);
+}
+
+/*------SUBTITULOS------*/
+
+
+/*------PARRAFOS------*/
+
 
 .parrafoB {
     @include parrafo($colorTerciario);
 }
+
 .parrafoN {
     @include parrafo($colorSecundario);
 }
 
-.subTituloN  {
-    @include titulo (5rem, $colorSecundario);
-}
 
-.subTituloBlanco{
-    @include titulo (3rem, $colorTerciario);
-}
+/*------PARRAFOS------*/
+
+
+
 
 .subTituloBanner {
     @include titulo (4rem, $colorPrimario);
@@ -58,7 +56,7 @@
     @include titulo (6rem, $colorSecundario);
 }
 
-.iconos{
+.iconos {
     color: $colorPrimario;
 }
 

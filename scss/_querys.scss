@@ -62,14 +62,22 @@
         align-items: center;
     }
 
+    .tarjeta{
+        flex: 80%;
+    }
+    
 }
 
 /*--Tamaño Pequeño - Celulares--*/
 
 @media screen and (max-width: 576px) {
-
+    
     html {
         font-size: 30%;
+    }
+    
+    .tarjeta{
+        flex: 100%;
     }
 
     .imgCont {

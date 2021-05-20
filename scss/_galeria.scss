@@ -1,25 +1,19 @@
 /*--galeria--*/
 
-.fila {
-    display: flex;
-    padding: 0.5em;
-    flex-wrap: wrap;
-}
-
 .columna {
-    flex: 30%;
-    padding: 0.5em;
+    flex: 25%;
+    padding: 1em;
 }
 
 .gImg {
     width: 100%;
-    margin-top: 0.5em;
+    margin-top: 1em;
     flex: 25%;
     transition: 0.3s ease;
-}
 
-.gImg:hover{
-    transform: scale(0.9);
+    &:hover {
+        transform: scale(0.9);
+    }
 }
 
 .copy {
@@ -28,30 +22,20 @@
 }
 
 #modalGaleria .modal-img {
-    width: 80%;
+    width: 90%;
     background-color: black;
-
 }
 
 .modal-body {
     background-color: black;
     display: flex;
-    justify-content: center;
-    align-content: center;
     flex-direction: column;
     align-items: center;
 }
 
 @media screen and (max-width: 992px) {
-    
+
     .columna {
-        .gImg {
-            height: auto;
-            width: 100%;
-            margin-top: 0.5em;
-            flex: 25%;
-        }
-        
         flex: 50%;
         padding: 0.5em;
     }

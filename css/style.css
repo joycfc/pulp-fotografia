@@ -16,6 +16,9 @@ html {
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
 base
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------
+BACKGROUND Y PATTERN
+--------------------------------------------------------------------------------------------------------------------------------------------------*/
 .bkgA {
   background-color: #ffe600; }
 
@@ -23,17 +26,35 @@ base
   background-color: black; }
 
 .patternBlanco {
-  background-image: url(/images/pattern.jpg); }
+  background-image: url(images/pattern.jpg); }
 
 .patternNegro {
-  background-image: url(/images/patternn.jpg); }
+  background-image: url(/images/pattern2.jpg); }
 
+/*---------------------------------------------------------------------------------------------------------------------------------------------------
+BACKGROUND Y PATTERN
+--------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------
+LOGOTIPOS
+--------------------------------------------------------------------------------------------------------------------------------------------------*/
 .logoP {
   height: 10rem;
   max-height: 40%;
   margin: 0;
   margin: 2em; }
 
+.logoG {
+  height: 15rem;
+  max-height: 60%;
+  width: auto;
+  padding: 2em;
+  margin: 20px; }
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------
+LOGOTIPOS
+--------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------ texto y titulos -----*/
+/*------ texto y titulos -----*/
 /*------------------------------------------------------------------------------------------------------------------------------------------------
 banner
 ------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -180,8 +201,6 @@ contenedores
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  height: 100vh;
-  flex-direction: row;
   overflow: hidden; }
 
 .Fila100reverse {
@@ -196,18 +215,9 @@ contenedores
   display: flex;
   height: auto;
   width: 100%;
+  flex: 30%;
   flex-wrap: wrap;
-  border: chartreuse solid 3px;
   justify-content: center; }
-
-.col80 {
-  height: 80%;
-  display: flex;
-  align-items: center;
-  width: 80%;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 2em; }
 
 .col50 {
   display: flex;
@@ -215,10 +225,20 @@ contenedores
   text-align: center;
   justify-content: center; }
 
+.col80 {
+  display: flex;
+  height: auto;
+  width: 80%;
+  flex-direction: column;
+  margin-bottom: 2em auto;
+  align-items: center;
+  justify-content: center; }
+
 .col100 {
   height: auto;
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 100%;
   flex-direction: column; }
 
@@ -245,13 +265,6 @@ contenedores
   width: 100%;
   align-items: center; }
 
-.logoG {
-  height: 20rem;
-  max-height: 60%;
-  width: auto;
-  padding: 2em;
-  margin: 20px; }
-
 .imagenRes {
   height: 100vh;
   width: 100%;
@@ -261,7 +274,7 @@ contenedores
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
 contenedores
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*------ texto y titulos -----*/
+/*------TITULOS------*/
 .tituloH1 {
   font-size: 7rem;
   color: white;
@@ -278,6 +291,8 @@ contenedores
   text-align: center;
   padding: 0.5em; }
 
+/*------TITULOS------*/
+/*------SUBTITULOS------*/
 .subTituloA {
   font-size: 5rem;
   color: #ffe600;
@@ -286,39 +301,15 @@ contenedores
   text-align: center;
   padding: 0.5em; }
 
-.tituloH3Negro {
-  font-size: 3rem;
+.subTituloB {
+  font-size: 4rem;
   color: black;
   font-family: 'Montserrat';
   font-weight: bold;
   text-align: center;
   padding: 0.5em; }
 
-.parrafoB {
-  font-family: 'Raleway';
-  font-size: 2rem;
-  padding: 0.5em;
-  text-align: justify;
-  margin: 0 3em;
-  color: white; }
-
-.parrafoN {
-  font-family: 'Raleway';
-  font-size: 2rem;
-  padding: 0.5em;
-  text-align: justify;
-  margin: 0 3em;
-  color: black; }
-
-.subTituloN {
-  font-size: 5rem;
-  color: black;
-  font-family: 'Montserrat';
-  font-weight: bold;
-  text-align: center;
-  padding: 0.5em; }
-
-.subTituloBlanco {
+.subTituloC {
   font-size: 3rem;
   color: white;
   font-family: 'Montserrat';
@@ -326,6 +317,33 @@ contenedores
   text-align: center;
   padding: 0.5em; }
 
+.subtituloD {
+  font-size: 3rem;
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5em; }
+
+/*------SUBTITULOS------*/
+/*------PARRAFOS------*/
+.parrafoB {
+  font-family: 'Raleway';
+  font-size: 2rem;
+  padding: 0.5em;
+  text-align: justify;
+  margin: 2em 3em;
+  color: white; }
+
+.parrafoN {
+  font-family: 'Raleway';
+  font-size: 2rem;
+  padding: 0.5em;
+  text-align: justify;
+  margin: 2em 3em;
+  color: black; }
+
+/*------PARRAFOS------*/
 .subTituloBanner {
   font-size: 4rem;
   color: #ffe600;
@@ -572,12 +590,16 @@ botones
     width: 100%;
     background-image: url(../images/C3.jpg);
     justify-content: center;
-    align-items: center; } }
+    align-items: center; }
+  .tarjeta {
+    flex: 80%; } }
 
 /*--Tamaño Pequeño - Celulares--*/
 @media screen and (max-width: 576px) {
   html {
     font-size: 30%; }
+  .tarjeta {
+    flex: 100%; }
   .imgCont {
     height: 100%;
     width: 100%;
@@ -595,29 +617,6 @@ botones
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
 cards
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
-.crd {
-  display: flex;
-  height: auto;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5em;
-  margin-bottom: 5em;
-  flex-direction: column;
-  background-color: black;
-  border-radius: 20px;
-  transition: 0.3s ease all; }
-  .crd__img {
-    width: 100%;
-    border-radius: 20px;
-    max-width: 100%;
-    padding: 1em; }
-  .crd__body {
-    text-align: center;
-    padding: 1em; }
-  .crd:hover {
-    transform: scale(1.05); }
-
 .trb {
   width: 100%;
   display: flex;
@@ -747,15 +746,24 @@ cards
 cards
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
 .tarjeta {
-  height: auto;
-  width: 30%;
-  background-color: black;
   display: flex;
+  height: auto;
+  width: 25%;
+  background-color: black;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2em;
-  border-radius: 50px; }
+  margin: 3em;
+  border-radius: 10%;
+  transition: 0.3s; }
+  .tarjeta:hover {
+    transform: scale(1.05); }
+
+.imagen {
+  width: 100%;
+  border-radius: 10%;
+  max-width: 100%;
+  padding: 1em; }
 
 .prueba {
   height: auto;
@@ -846,49 +854,36 @@ cards
     margin-bottom: 1em; } }
 
 /*--galeria--*/
-.fila {
-  display: flex;
-  padding: 0.5em;
-  flex-wrap: wrap; }
-
 .columna {
-  flex: 30%;
-  padding: 0.5em; }
+  flex: 25%;
+  padding: 1em; }
 
 .gImg {
   width: 100%;
-  margin-top: 0.5em;
+  margin-top: 1em;
   flex: 25%;
   transition: 0.3s ease; }
-
-.gImg:hover {
-  transform: scale(0.9); }
+  .gImg:hover {
+    transform: scale(0.9); }
 
 .copy {
   font-size: 1rem;
   color: yellow; }
 
 #modalGaleria .modal-img {
-  width: 80%;
+  width: 90%;
   background-color: black; }
 
 .modal-body {
   background-color: black;
   display: flex;
-  justify-content: center;
-  align-content: center;
   flex-direction: column;
   align-items: center; }
 
 @media screen and (max-width: 992px) {
   .columna {
     flex: 50%;
-    padding: 0.5em; }
-    .columna .gImg {
-      height: auto;
-      width: 100%;
-      margin-top: 0.5em;
-      flex: 25%; } }
+    padding: 0.5em; } }
 
 /*--Tamaño Pequeño - Celulares--*/
 @media screen and (max-width: 576px) {
