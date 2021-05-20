@@ -8,7 +8,6 @@ base
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: 'Raleway';
-
 }
 
 html {
@@ -32,7 +31,7 @@ base
 
 
 .bkgA{
-    background-color: #ffd622;
+    background-color: $colorPrimario;
 }
 .bkgB{
     background-color: black;
@@ -46,3 +45,9 @@ base
     background-image: url(/images/patternn.jpg)
 }
 
+.logoP {
+    height: 10rem;
+    max-height: 40%;
+    margin:0;
+    margin: 2em;
+}

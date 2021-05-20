@@ -2,13 +2,13 @@
 botones
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
 @mixin btn ($colorbtn, $borderNormal, $btback, $colorHover, $borderHover) {
-    
+
     color: $colorbtn;
     border: $borderNormal solid 0.2rem;
-    min-width: 180px;
+    width: 25rem;
     height: 5rem;
-    padding: 0, 3em;
-    margin: 3em;
+    padding: 0, 1em;
+    margin: 1em;
     display: inline-block;
     border-radius: 100px;
     text-decoration: none;
@@ -20,12 +20,12 @@ botones
     font-size: 2em;
     font-family: 'Montserrat';
     font-weight: 600;
-    
-    
+
+
     &__txt {
-        padding-left:1em;
+        padding-left: 1em;
     }
-    
+
     &__icono {
         padding: 1em;
         font-size: 2rem;

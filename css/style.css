@@ -17,7 +17,7 @@ html {
 base
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
 .bkgA {
-  background-color: #ffd622; }
+  background-color: #ffe600; }
 
 .bkgB {
   background-color: black; }
@@ -27,6 +27,12 @@ base
 
 .patternNegro {
   background-image: url(/images/patternn.jpg); }
+
+.logoP {
+  height: 10rem;
+  max-height: 40%;
+  margin: 0;
+  margin: 2em; }
 
 /*------------------------------------------------------------------------------------------------------------------------------------------------
 banner
@@ -102,11 +108,6 @@ banner
   align-items: center;
   justify-content: space-between;
   z-index: 100; }
-  .navbar .logoP {
-    height: 13rem;
-    max-height: 40%;
-    margin: 0;
-    margin: 2em; }
   .navbar__menu {
     position: absolute;
     width: 100%;
@@ -175,26 +176,13 @@ banner
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
 contenedores
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*--contenedores--*/
-.col100 {
-  height: auto;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  flex-direction: column;
-  background-color: #ffe600; }
-
 .Fila100 {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   height: 100vh;
   flex-direction: row;
-  overflow: hidden;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-  align-content: center; }
+  overflow: hidden; }
 
 .Fila100reverse {
   display: flex;
@@ -204,11 +192,35 @@ contenedores
   flex-direction: row-reverse;
   overflow: hidden; }
 
+.col30 {
+  display: flex;
+  height: auto;
+  width: 100%;
+  flex-wrap: wrap;
+  border: chartreuse solid 3px;
+  justify-content: center; }
+
+.col80 {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 2em; }
+
 .col50 {
   display: flex;
   flex: 50%;
   text-align: center;
   justify-content: center; }
+
+.col100 {
+  height: auto;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: column; }
 
 .imgCont {
   height: 100vh;
@@ -216,8 +228,7 @@ contenedores
   overflow: hidden;
   object-position: center;
   margin: 0;
-  padding: 0;
-  object-fit: cover; }
+  padding: 0; }
 
 .box {
   display: flex;
@@ -288,7 +299,7 @@ contenedores
   font-size: 2rem;
   padding: 0.5em;
   text-align: justify;
-  margin: 0 1.5em;
+  margin: 0 3em;
   color: white; }
 
 .parrafoN {
@@ -296,7 +307,7 @@ contenedores
   font-size: 2rem;
   padding: 0.5em;
   text-align: justify;
-  margin: 0 1.5em;
+  margin: 0 3em;
   color: black; }
 
 .subTituloN {
@@ -404,10 +415,10 @@ botones
 .btn__A {
   color: #ffe600;
   border: #ffe600 solid 0.2rem;
-  min-width: 180px;
+  width: 25rem;
   height: 5rem;
-  padding: 0, 3em;
-  margin: 3em;
+  padding: 0, 1em;
+  margin: 1em;
   display: inline-block;
   border-radius: 100px;
   text-decoration: none;
@@ -432,10 +443,10 @@ botones
 .btn__A--N {
   color: black;
   border: black solid 0.2rem;
-  min-width: 180px;
+  width: 25rem;
   height: 5rem;
-  padding: 0, 3em;
-  margin: 3em;
+  padding: 0, 1em;
+  margin: 1em;
   display: inline-block;
   border-radius: 100px;
   text-decoration: none;
@@ -460,10 +471,10 @@ botones
 .btn__A--C {
   color: #ffe600;
   border: #ffe600 solid 0.2rem;
-  min-width: 180px;
+  width: 25rem;
   height: 5rem;
-  padding: 0, 3em;
-  margin: 3em;
+  padding: 0, 1em;
+  margin: 1em;
   display: inline-block;
   border-radius: 100px;
   text-decoration: none;
@@ -585,31 +596,27 @@ botones
 cards
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
 .crd {
+  display: flex;
+  height: auto;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 5em;
   margin-bottom: 5em;
-  display: flex;
   flex-direction: column;
   background-color: black;
-  background-clip: border-box;
   border-radius: 20px;
   transition: 0.3s ease all; }
-
-.crd__img {
-  width: 100%;
-  border-radius: 20px;
-  max-width: 100%;
-  padding: 1em; }
-
-.crd__body {
-  text-align: center;
-  padding: 1em; }
-
-.crd:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25); }
+  .crd__img {
+    width: 100%;
+    border-radius: 20px;
+    max-width: 100%;
+    padding: 1em; }
+  .crd__body {
+    text-align: center;
+    padding: 1em; }
+  .crd:hover {
+    transform: scale(1.05); }
 
 .trb {
   width: 100%;
@@ -632,7 +639,7 @@ cards
   padding: 20px; }
 
 .trb__titulo {
-  color: yellow;
+  color: #ffe600;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 900; }
@@ -739,6 +746,25 @@ cards
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
 cards
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
+.tarjeta {
+  height: auto;
+  width: 30%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2em;
+  border-radius: 50px; }
+
+.prueba {
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  object-position: center;
+  margin: 0;
+  padding: 0; }
+
 .contacto {
   height: auto;
   display: grid;
@@ -874,8 +900,8 @@ cards
 footer
 -----------------------------------------------------------------------------------------------------------------------------------------*/
 footer {
+  height: auto;
   width: 100%;
-  height: 55vh;
   background-color: black;
   display: flex;
   flex-direction: column;

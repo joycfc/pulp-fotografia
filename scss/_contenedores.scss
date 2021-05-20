@@ -2,19 +2,6 @@
 contenedores
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-
-
-/*--contenedores--*/
-
-.col100 {
-    height: auto;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    flex-direction: column;
-    background-color: $colorPrimario;
-}
-
 .Fila100 {
     display: flex;
     flex-wrap: wrap;
@@ -22,10 +9,6 @@ contenedores
     height: 100vh;
     flex-direction: row;
     overflow: hidden;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    align-content: center;
 }
 
 .Fila100reverse {
@@ -37,11 +20,38 @@ contenedores
     overflow: hidden;
 }
 
+.col30 {
+    display: flex;
+    height: auto;
+    width: 100%;
+    flex-wrap: wrap;
+    border: chartreuse solid 3px;
+    justify-content: center;
+}
+
+.col80 {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
 .col50 {
     display: flex;
     flex: 50%;
     text-align: center;
     justify-content: center;
+}
+
+.col100 {
+    height: auto;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
 }
 
 .imgCont {
@@ -51,7 +61,6 @@ contenedores
     object-position: center;
     margin: 0;
     padding: 0;
-    object-fit: cover;
 }
 
 
@@ -64,7 +73,6 @@ contenedores
     align-items: center;
     text-align: center;
 }
-
 
 .grid {
     display: grid;

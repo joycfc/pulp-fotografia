@@ -9,6 +9,15 @@
     padding: 0.5em;
 }
 
+@mixin parrafo ($colorTxt) {
+    font-family: 'Raleway';
+    font-size: 2rem;
+    padding: 0.5em;
+    text-align: justify;
+    margin: 0 3em; 
+    color: $colorTxt;
+}
+
 
 .tituloH1 {
     @include titulo (7rem, $colorTerciario);
@@ -27,21 +36,10 @@
 }
 
 .parrafoB {
-    font-family: 'Raleway';
-    font-size: 2rem;
-    padding: 0.5em;
-    text-align: justify;
-    margin:0 1.5em ;
-    color: $colorTerciario;
+    @include parrafo($colorTerciario);
 }
-
 .parrafoN {
-    font-family: 'Raleway';
-    font-size: 2rem;
-    padding: 0.5em;
-    text-align: justify;
-    margin:0 1.5em ;
-    color: $colorSecundario;
+    @include parrafo($colorSecundario);
 }
 
 .subTituloN  {
@@ -59,7 +57,6 @@
 .titulo1 {
     @include titulo (6rem, $colorSecundario);
 }
-
 
 .iconos{
     color: $colorPrimario;
