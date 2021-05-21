@@ -568,7 +568,7 @@ botones
     display: none; }
   .bannerUno {
     display: flex;
-    background-image: url(images/c3.jpg);
+    background-image: url(../images/c2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
