@@ -580,6 +580,8 @@ botones
 
 /*--Tamaño Pequeño mediano - Celulares tablets pequeñas--*/
 @media screen and (max-width: 724px) {
+  #carouselT {
+    display: none; }
   .bannerUno {
     display: flex;
     overflow: hidden;
