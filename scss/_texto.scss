@@ -1,3 +1,7 @@
+/*---------------------------------------------------------------------------------------------------------------------------------------------------
+TEXTOS Y TITULOS
+--------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 /*------TITULOS------*/
 
 .tituloH1 {
@@ -24,15 +28,19 @@
     @include titulo (3rem, $colorTerciario);
 
 }
+
 .subtituloD {
-    @include titulo (3rem, $colorTerciario);
+    @include titulo (2rem, $colorTerciario);
+}
+
+.left{
+    text-align: left;
 }
 
 /*------SUBTITULOS------*/
 
 
 /*------PARRAFOS------*/
-
 
 .parrafoB {
     @include parrafo($colorTerciario);
@@ -45,9 +53,6 @@
 
 /*------PARRAFOS------*/
 
-
-
-
 .subTituloBanner {
     @include titulo (4rem, $colorPrimario);
 }
@@ -58,11 +63,16 @@
 
 .iconos {
     color: $colorPrimario;
+    font-size: 3rem;
+   
 }
 .iconosB {
     color: $colorSecundario;
     font-size: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
-
-/*------ texto y titulos -----*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------
+TEXTOS Y TITULOS
+--------------------------------------------------------------------------------------------------------------------------------------------------*/

@@ -1,4 +1,4 @@
-/*------ texto y titulos -----*/
+/*------mixings texto y titulos -----*/
 
 @mixin titulo ($size, $color, ) {
     font-size: $size;
@@ -6,7 +6,7 @@
     font-family: 'Montserrat';
     font-weight: bold;
     text-align: center;
-    padding: 0.5em;
+    padding: 0.4em;
 }
 
 @mixin parrafo ($colorTxt) {
@@ -14,13 +14,13 @@
     font-size: 2rem;
     padding: 0.5em;
     text-align: justify;
-    margin: 2em 3em;
+    margin: 1.5em 3em;
     color: $colorTxt;
 }
 
-/*------ texto y titulos -----*/
+/*------mixings texto y titulos -----*/
 
-/*--banner--*/
+/*--mixings banner--*/
 
 @mixin bannerPagina {
     position: absolute;
@@ -36,4 +36,4 @@
     box-shadow: $sombra;
 }
 
-/*--banner--*/
+/*--mixings banner--*/

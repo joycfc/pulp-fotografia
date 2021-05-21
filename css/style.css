@@ -26,10 +26,10 @@ BACKGROUND Y PATTERN
   background-color: black; }
 
 .patternBlanco {
-  background-image: url(images/pattern.jpg); }
+  background-image: url(../images/pattern.jpg); }
 
 .patternNegro {
-  background-image: url(/images/pattern2.jpg); }
+  background-image: url(../images/pattern2.jpg); }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
 BACKGROUND Y PATTERN
@@ -53,13 +53,118 @@ LOGOTIPOS
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
 LOGOTIPOS
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*------ texto y titulos -----*/
-/*------ texto y titulos -----*/
-/*--banner--*/
-/*--banner--*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------
+/*------mixings texto y titulos -----*/
+/*------mixings texto y titulos -----*/
+/*--mixings banner--*/
+/*--mixings banner--*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------
+TEXTOS Y TITULOS
+--------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------TITULOS------*/
+.tituloH1 {
+  font-size: 7rem;
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-align: center;
+  padding: 0.4em; }
+
+.tituloH2Blanco {
+  font-size: 6rem;
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-align: center;
+  padding: 0.4em; }
+
+/*------TITULOS------*/
+/*------SUBTITULOS------*/
+.subTituloA {
+  font-size: 5rem;
+  color: #ffe600;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-align: center;
+  padding: 0.4em; }
+
+.subTituloB {
+  font-size: 4rem;
+  color: black;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-align: center;
+  padding: 0.4em; }
+
+.subTituloC {
+  font-size: 3rem;
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-align: center;
+  padding: 0.4em; }
+
+.subtituloD {
+  font-size: 2rem;
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-align: center;
+  padding: 0.4em; }
+
+.left {
+  text-align: left; }
+
+/*------SUBTITULOS------*/
+/*------PARRAFOS------*/
+.parrafoB {
+  font-family: 'Raleway';
+  font-size: 2rem;
+  padding: 0.5em;
+  text-align: justify;
+  margin: 1.5em 3em;
+  color: white; }
+
+.parrafoN {
+  font-family: 'Raleway';
+  font-size: 2rem;
+  padding: 0.5em;
+  text-align: justify;
+  margin: 1.5em 3em;
+  color: black; }
+
+/*------PARRAFOS------*/
+.subTituloBanner {
+  font-size: 4rem;
+  color: #ffe600;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-align: center;
+  padding: 0.4em; }
+
+.titulo1 {
+  font-size: 6rem;
+  color: black;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-align: center;
+  padding: 0.4em; }
+
+.iconos {
+  color: #ffe600;
+  font-size: 3rem; }
+
+.iconosB {
+  color: black;
+  font-size: 10rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------
+TEXTOS Y TITULOS
+--------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------
 banner
-------------------------------------------------------------------------------------------------------------------------------------------------*/
+--------------------------------------------------------------------------------------------------------------------------------------------------*/
 .bannerUno {
   display: none;
   background-image: url(../images/c3.jpg); }
@@ -120,82 +225,20 @@ banner
   box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99);
   background-image: url(../images/fondo5.jpg); }
 
-/*--banner--*/
-/*--menu de navegacion--*/
-.navbar {
-  width: 100%;
+.mascara {
   position: absolute;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 100; }
-  .navbar__menu {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    background-color: black;
-    top: -100vh;
-    left: 0;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    transition: .8s;
-    overflow: hidden; }
-  .navbar__item {
-    list-style: none;
-    margin: 2em 0; }
-  .navbar__link {
-    text-decoration: none;
-    font-family: 'Montserrat';
-    font-size: 3rem;
-    color: yellow;
-    padding: 0.5em;
-    letter-spacing: .5em;
-    position: relative;
-    display: block; }
-    .navbar__link:hover {
-      color: white; }
-    .navbar__link::after {
-      content: '';
-      height: 3px;
-      width: 0%;
-      background: white;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      transition: 0.5s; }
-    .navbar__link:hover::after {
-      width: 100%; }
-  .navbar__link--active {
-    color: white;
-    pointer-events: none;
-    cursor: default; }
-  .navbar__closeIcon {
-    font-size: 2.5rem;
-    cursor: pointer;
-    color: yellow;
-    padding: 0.5em; }
-    .navbar__closeIcon:hover {
-      color: black;
-      background-color: yellow;
-      padding: 0.5em;
-      border-radius: 5px; }
-  .navbar .openIcon {
-    font-size: 25px;
-    color: yellow;
-    cursor: pointer;
-    padding: 1.2em;
-    transition: 0.3s; }
-    .navbar .openIcon:hover {
-      color: white;
-      padding: 1.2em; }
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed backdrop-filter blur(1px);
+  background-color: rgba(0, 0, 0, 0.75); }
 
-/*--menu de navegacion--*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------
+banner
+--------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
 contenedores
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -272,102 +315,87 @@ contenedores
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
 contenedores
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*------TITULOS------*/
-.tituloH1 {
-  font-size: 7rem;
-  color: white;
-  font-family: 'Montserrat';
-  font-weight: bold;
-  text-align: center;
-  padding: 0.5em; }
-
-.tituloH2Blanco {
-  font-size: 6rem;
-  color: white;
-  font-family: 'Montserrat';
-  font-weight: bold;
-  text-align: center;
-  padding: 0.5em; }
-
-/*------TITULOS------*/
-/*------SUBTITULOS------*/
-.subTituloA {
-  font-size: 5rem;
-  color: #ffe600;
-  font-family: 'Montserrat';
-  font-weight: bold;
-  text-align: center;
-  padding: 0.5em; }
-
-.subTituloB {
-  font-size: 4rem;
-  color: black;
-  font-family: 'Montserrat';
-  font-weight: bold;
-  text-align: center;
-  padding: 0.5em; }
-
-.subTituloC {
-  font-size: 3rem;
-  color: white;
-  font-family: 'Montserrat';
-  font-weight: bold;
-  text-align: center;
-  padding: 0.5em; }
-
-.subtituloD {
-  font-size: 3rem;
-  color: white;
-  font-family: 'Montserrat';
-  font-weight: bold;
-  text-align: center;
-  padding: 0.5em; }
-
-/*------SUBTITULOS------*/
-/*------PARRAFOS------*/
-.parrafoB {
-  font-family: 'Raleway';
-  font-size: 2rem;
-  padding: 0.5em;
-  text-align: justify;
-  margin: 2em 3em;
-  color: white; }
-
-.parrafoN {
-  font-family: 'Raleway';
-  font-size: 2rem;
-  padding: 0.5em;
-  text-align: justify;
-  margin: 2em 3em;
-  color: black; }
-
-/*------PARRAFOS------*/
-.subTituloBanner {
-  font-size: 4rem;
-  color: #ffe600;
-  font-family: 'Montserrat';
-  font-weight: bold;
-  text-align: center;
-  padding: 0.5em; }
-
-.titulo1 {
-  font-size: 6rem;
-  color: black;
-  font-family: 'Montserrat';
-  font-weight: bold;
-  text-align: center;
-  padding: 0.5em; }
-
-.iconos {
-  color: #ffe600; }
-
-.iconosB {
-  color: black;
-  font-size: 10rem; }
-
-/*------ texto y titulos -----*/
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
-carusel
+menu de navegacion
+--------------------------------------------------------------------------------------------------------------------------------------------------*/
+.navbar {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100; }
+  .navbar__menu {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    top: -100vh;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: .8s;
+    overflow: hidden; }
+  .navbar__item {
+    list-style: none;
+    margin: 2em 0; }
+  .navbar__link {
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 3rem;
+    color: yellow;
+    padding: 0.5em;
+    letter-spacing: .5em;
+    position: relative;
+    display: block; }
+    .navbar__link:hover {
+      color: white; }
+    .navbar__link::after {
+      content: '';
+      height: 3px;
+      width: 0%;
+      background: white;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transition: 0.5s; }
+    .navbar__link:hover::after {
+      width: 100%; }
+  .navbar__link--active {
+    color: white;
+    pointer-events: none;
+    cursor: default; }
+  .navbar__closeIcon {
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: yellow;
+    padding: 0.5em; }
+    .navbar__closeIcon:hover {
+      color: black;
+      background-color: yellow;
+      padding: 0.5em;
+      border-radius: 5px; }
+  .navbar .openIcon {
+    font-size: 25px;
+    color: yellow;
+    cursor: pointer;
+    padding: 1.2em;
+    transition: 0.3s; }
+    .navbar .openIcon:hover {
+      color: white;
+      padding: 1.2em; }
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------
+menu de navegacion
+--------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------
+carrousel
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
 header {
   height: 100vh;
@@ -390,6 +418,19 @@ header {
   overflow: hidden;
   box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99); }
 
+.carouselTexto {
+  height: auto;
+  width: auto;
+  position: absolute;
+  top: 30%;
+  bottom: 30%;
+  left: 15%;
+  right: 15%;
+  padding-top: 1em;
+  padding-bottom: 0.2em;
+  color: yellow;
+  text-align: center; }
+
 .bgImagen {
   position: relative;
   overflow: hidden;
@@ -397,19 +438,8 @@ header {
   background-size: cover;
   background-position: 50%; }
 
-.mascara {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-attachment: fixed backdrop-filter blur(1px);
-  background-color: rgba(0, 0, 0, 0.75); }
-
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
-carusel
+carrousel
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
 botones
@@ -535,7 +565,9 @@ botones
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
 botones
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*-- media querys--*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------
+media querys-
+--------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*--Tamaño mediano - tablets--*/
 @media screen and (max-width: 992px) {
   html {
@@ -568,7 +600,8 @@ botones
     display: none; }
   .bannerUno {
     display: flex;
-    background-image: url(../images/c2.jpg);
+    overflow: hidden;
+    background-image: url(../images/c3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -599,6 +632,9 @@ botones
     height: 50vh;
     width: 100vw; } }
 
+/*---------------------------------------------------------------------------------------------------------------------------------------------------
+media querys-
+--------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
 cards
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -760,7 +796,8 @@ cards
     outline: none;
     padding-left: 5px;
     background: transparent;
-    color: #ffe600; }
+    color: white;
+    font-size: 2rem; }
     .contacto__input::placeholder {
       color: #ffe600;
       font-size: 2rem; }

@@ -41,7 +41,8 @@
 		outline: none;
 		padding-left: 5px;
 		background: transparent;
-		color: $colorPrimario;
+		color: $colorTerciario;
+		font-size:2rem;
 
 		&::placeholder {
 			color: $colorPrimario;
