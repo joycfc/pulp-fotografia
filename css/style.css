@@ -658,39 +658,6 @@ cards
   max-width: 100%;
   padding: 2em; }
 
-.trb {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  word-wrap: break-word;
-  background-color: black;
-  background-clip: border-box;
-  border-radius: 20px;
-  transition: 0.3s ease all; }
-
-.trb__img {
-  width: 100%;
-  border-radius: 20px;
-  max-width: 100%;
-  padding: 10px; }
-
-.trb__body {
-  text-align: center;
-  padding: 20px; }
-
-.trb__titulo {
-  color: #ffe600;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 900; }
-
-.trb__text {
-  color: white; }
-
-.trb:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25); }
-
 /*--team cards--*/
 .about {
   display: flex;
