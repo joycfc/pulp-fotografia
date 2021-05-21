@@ -1,6 +1,6 @@
 /*------ texto y titulos -----*/
 
-@mixin titulo ($size, $color,) {
+@mixin titulo ($size, $color, ) {
     font-size: $size;
     color: $color;
     font-family: 'Montserrat';
@@ -14,8 +14,26 @@
     font-size: 2rem;
     padding: 0.5em;
     text-align: justify;
-    margin: 2em 3em; 
+    margin: 2em 3em;
     color: $colorTxt;
 }
 
 /*------ texto y titulos -----*/
+
+/*--banner--*/
+
+@mixin bannerPagina {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: $colorSecundario;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    box-shadow: $sombra;
+}
+
+/*--banner--*/

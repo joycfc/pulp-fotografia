@@ -28,19 +28,19 @@ header {
 
 }
 
-.carouselTexto {
-  height: auto;
-  width: auto;
-  position: absolute;
-  top: 30%;
-  bottom: 30%;
-  left: 15%;
-  right: 15%;
-  padding-top: 1em;
-  padding-bottom: 0.2em;
-  color: yellow;
-  text-align: center;
-}
+// .carouselTexto {
+//   height: auto;
+//   width: auto;
+//   position: absolute;
+//   top: 30%;
+//   bottom: 30%;
+//   left: 15%;
+//   right: 15%;
+//   padding-top: 1em;
+//   padding-bottom: 0.2em;
+//   color: yellow;
+//   text-align: center;
+// }
 
 .bgImagen {
   position: relative;
@@ -57,9 +57,9 @@ header {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-attachment: fixed backdrop-filter blur(1px);
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: $transparencia;
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
