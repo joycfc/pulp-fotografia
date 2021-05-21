@@ -419,11 +419,6 @@ header {
   background-attachment: fixed backdrop-filter blur(1px);
   background-color: rgba(0, 0, 0, 0.75); }
 
-/*--Tamaño Pequeño - Celulares--*/
-@media screen and (max-width: 724px) {
-  #carouselT {
-    display: none; } }
-
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
 carusel
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -584,13 +579,12 @@ botones
     display: none; }
   .bannerUno {
     display: flex;
-    overflow: hidden;
+    background-image: url(../images/c3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
     width: 100%;
-    background-image: url(../images/C3.jpg);
     justify-content: center;
     align-items: center; }
   .tarjeta {
