@@ -658,15 +658,8 @@ cards
   max-width: 100%;
   padding: 2em; }
 
-/*--team cards--*/
-.about {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%; }
-
-.team {
+/*--tarjetas con info--*/
+.cards {
   margin: 4rem;
   width: 300px;
   height: 300px;
@@ -679,10 +672,10 @@ cards
   justify-content: center;
   border-radius: 2rem;
   border: black solid 3px; }
-  .team:hover {
+  .cards:hover {
     transform: translateY(10px);
     box-shadow: 0px 10px 32px -14px rgba(0, 0, 0, 0.99); }
-  .team:hover:before {
+  .cards:hover:before {
     content: '';
     position: absolute;
     top: 0;
@@ -695,10 +688,10 @@ cards
     opacity: 0.8;
     transition: 0.3s ease-in;
     border-radius: 2rem; }
-  .team:hover .team__txt {
+  .cards:hover .cards__txt {
     opacity: 1;
     transform: translateY(0); }
-  .team__foto {
+  .cards__foto {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -708,20 +701,20 @@ cards
     object-fit: cover;
     border-radius: 2rem;
     padding: 1rem; }
-  .team__txt {
+  .cards__txt {
     position: relative;
     z-index: 3;
     opacity: 0;
     transform: translateY(60px);
     transition: 0.2s ease-in;
     text-align: center; }
-  .team__name {
+  .cards__name {
     font-size: 3rem;
     color: white;
     font-weight: bold;
     text-transform: uppercase;
     font-style: normal; }
-  .team__role {
+  .cards__role {
     font-size: 2rem;
     color: #ffe600; }
 
