@@ -44,6 +44,13 @@ media querys-
         align-content: center;
     }
 
+    /*--galeria--*/
+
+    .columna {
+        flex: 50%;
+        padding: 0.5em;
+    }
+
 }
 
 /*--Tamaño Pequeño mediano - Celulares tablets pequeñas--*/
@@ -103,6 +110,61 @@ media querys-
         height: 50vh;
         width: 100vw;
     }
+
+/*--galeria--*/
+
+.columna {
+    flex: 100%;
+    padding: 0.5em;
+}
+
+    /*--contactos--*/
+
+    .contacto__s1 {
+        flex: 50%;
+    }
+
+    .contacto__s2 {
+        flex: 50%;
+    }
+
+    .contacto__s3 {
+        flex: 100%;
+    }
+
+    /*--contactos--*/
+
+
+}
+
+/*--Tamaño Pequeño  xs - Celulares--*/
+
+
+@media only screen and (max-width:360px) {
+
+    /*--contactos--*/
+
+
+    .contacto__contenedor {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .contacto__s1 {
+        flex: 50%;
+    }
+
+    .contacto__s2 {
+        flex: 50%;
+    }
+
+    .contacto__s3 {
+        flex: 100%;
+        margin-bottom: 1em;
+    }
+
+    /*--contactos--*/
 
 }
 
